@@ -1,0 +1,270 @@
+ninja: Entering directory `build-cpu'
+[1/159] Building C object ggml/src/CMakeFiles/ggml.dir/ggml-aarch64.c.o
+[2/159] Building CXX object ggml/src/CMakeFiles/ggml.dir/iqk/iqk_kda.cpp.o
+[3/159] Building CXX object ggml/src/CMakeFiles/ggml.dir/iqk/iqk_flash_attn.cpp.o
+[4/159] Building CXX object ggml/src/CMakeFiles/ggml.dir/ggml-moe-prefetch.cpp.o
+[5/159] Building CXX object src/CMakeFiles/llama.dir/llama-spec-features.cpp.o
+[6/159] Building CXX object ggml/src/CMakeFiles/ggml.dir/ggml-backend.cpp.o
+[7/159] Building CXX object ggml/src/CMakeFiles/ggml.dir/iqk/iqk_mul_mat.cpp.o
+[8/159] Building CXX object ggml/src/CMakeFiles/ggml.dir/iqk/iqk_cpu_ops.cpp.o
+[9/159] Building CXX object src/CMakeFiles/llama.dir/llama-spec-features-dflash.cpp.o
+[10/159] Building CXX object src/CMakeFiles/llama.dir/llama-dflash.cpp.o
+[11/159] Building CXX object src/CMakeFiles/llama.dir/llama-mmap.cpp.o
+[12/159] Building CXX object ggml/src/CMakeFiles/ggml.dir/iqk/fa/iqk_fa_576_512.cpp.o
+[13/159] Building CXX object ggml/src/CMakeFiles/ggml.dir/iqk/iqk_gemm_iquants.cpp.o
+[14/159] Building CXX object src/CMakeFiles/llama.dir/llama-dsv4.cpp.o
+[15/159] Building CXX object ggml/src/CMakeFiles/ggml.dir/iqk/fa/iqk_fa_320_256.cpp.o
+[16/159] Building CXX object ggml/src/CMakeFiles/ggml.dir/iqk/iqk_gemm_floats.cpp.o
+[17/159] Building CXX object ggml/src/CMakeFiles/ggml.dir/iqk/iqk_gemm_1bit.cpp.o
+[18/159] Building CXX object src/CMakeFiles/llama.dir/llama-vocab.cpp.o
+[19/159] Building CXX object src/CMakeFiles/llama.dir/llama-sampling.cpp.o
+[20/159] Building CXX object src/CMakeFiles/llama.dir/llama-moe-cache.cpp.o
+[21/159] Building CXX object src/CMakeFiles/llama.dir/llama-arch.cpp.o
+[22/159] Building CXX object src/CMakeFiles/llama.dir/llama-grammar.cpp.o
+[23/159] Building CXX object src/CMakeFiles/llama.dir/llama-reload.cpp.o
+[24/159] Building CXX object src/CMakeFiles/llama.dir/llama-model-loader.cpp.o
+[25/159] Building CXX object ggml/src/CMakeFiles/ggml.dir/iqk/iqk_gemm_iqk_quants.cpp.o
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_iqk_quants.cpp: In instantiation of ‘void {anonymous}::mul_mat_iq5_k_r4_q8_k(int, const void*, size_t, const DataInfo&, int) [with int nrc_y = 2; size_t = long unsigned int]’:
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_iqk_quants.cpp:3614:13:   required from here
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_iqk_quants.cpp:1848:10: warning: variable ‘ms’ set but not used [-Wunused-but-set-variable]
+ 1848 |     auto ms  = _mm256_set1_epi8(2);
+      |          ^~
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_iqk_quants.cpp:1849:10: warning: variable ‘shift_shuffle’ set but not used [-Wunused-but-set-variable]
+ 1849 |     auto shift_shuffle = _mm256_set_epi64x(0x0707070706060606, 0x0505050504040404, 0x0303030302020202, 0x0101010100000000);
+      |          ^~~~~~~~~~~~~
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_iqk_quants.cpp: In instantiation of ‘void {anonymous}::mul_mat_iq5_k_r4_q8_k(int, const void*, size_t, const DataInfo&, int) [with int nrc_y = 3; size_t = long unsigned int]’:
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_iqk_quants.cpp:3614:13:   required from here
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_iqk_quants.cpp:1848:10: warning: variable ‘ms’ set but not used [-Wunused-but-set-variable]
+ 1848 |     auto ms  = _mm256_set1_epi8(2);
+      |          ^~
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_iqk_quants.cpp:1849:10: warning: variable ‘shift_shuffle’ set but not used [-Wunused-but-set-variable]
+ 1849 |     auto shift_shuffle = _mm256_set_epi64x(0x0707070706060606, 0x0505050504040404, 0x0303030302020202, 0x0101010100000000);
+      |          ^~~~~~~~~~~~~
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_iqk_quants.cpp: In instantiation of ‘void {anonymous}::mul_mat_iq5_k_r4_q8_k(int, const void*, size_t, const DataInfo&, int) [with int nrc_y = 4; size_t = long unsigned int]’:
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_iqk_quants.cpp:3614:13:   required from here
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_iqk_quants.cpp:1848:10: warning: variable ‘ms’ set but not used [-Wunused-but-set-variable]
+ 1848 |     auto ms  = _mm256_set1_epi8(2);
+      |          ^~
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_iqk_quants.cpp:1849:10: warning: variable ‘shift_shuffle’ set but not used [-Wunused-but-set-variable]
+ 1849 |     auto shift_shuffle = _mm256_set_epi64x(0x0707070706060606, 0x0505050504040404, 0x0303030302020202, 0x0101010100000000);
+      |          ^~~~~~~~~~~~~
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_iqk_quants.cpp: In instantiation of ‘void {anonymous}::mul_mat_iq5_k_r4_q8_k(int, const void*, size_t, const DataInfo&, int) [with int nrc_y = 5; size_t = long unsigned int]’:
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_iqk_quants.cpp:3614:13:   required from here
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_iqk_quants.cpp:1848:10: warning: variable ‘ms’ set but not used [-Wunused-but-set-variable]
+ 1848 |     auto ms  = _mm256_set1_epi8(2);
+      |          ^~
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_iqk_quants.cpp:1849:10: warning: variable ‘shift_shuffle’ set but not used [-Wunused-but-set-variable]
+ 1849 |     auto shift_shuffle = _mm256_set_epi64x(0x0707070706060606, 0x0505050504040404, 0x0303030302020202, 0x0101010100000000);
+      |          ^~~~~~~~~~~~~
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_iqk_quants.cpp: In instantiation of ‘void {anonymous}::mul_mat_iq5_k_r4_q8_k(int, const void*, size_t, const DataInfo&, int) [with int nrc_y = 6; size_t = long unsigned int]’:
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_iqk_quants.cpp:3614:13:   required from here
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_iqk_quants.cpp:1848:10: warning: variable ‘ms’ set but not used [-Wunused-but-set-variable]
+ 1848 |     auto ms  = _mm256_set1_epi8(2);
+      |          ^~
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_iqk_quants.cpp:1849:10: warning: variable ‘shift_shuffle’ set but not used [-Wunused-but-set-variable]
+ 1849 |     auto shift_shuffle = _mm256_set_epi64x(0x0707070706060606, 0x0505050504040404, 0x0303030302020202, 0x0101010100000000);
+      |          ^~~~~~~~~~~~~
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_iqk_quants.cpp: In instantiation of ‘void {anonymous}::mul_mat_iq5_k_r4_q8_k(int, const void*, size_t, const DataInfo&, int) [with int nrc_y = 7; size_t = long unsigned int]’:
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_iqk_quants.cpp:3614:13:   required from here
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_iqk_quants.cpp:1848:10: warning: variable ‘ms’ set but not used [-Wunused-but-set-variable]
+ 1848 |     auto ms  = _mm256_set1_epi8(2);
+      |          ^~
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_iqk_quants.cpp:1849:10: warning: variable ‘shift_shuffle’ set but not used [-Wunused-but-set-variable]
+ 1849 |     auto shift_shuffle = _mm256_set_epi64x(0x0707070706060606, 0x0505050504040404, 0x0303030302020202, 0x0101010100000000);
+      |          ^~~~~~~~~~~~~
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_iqk_quants.cpp: In instantiation of ‘void {anonymous}::mul_mat_iq5_k_r4_q8_k(int, const void*, size_t, const DataInfo&, int) [with int nrc_y = 8; size_t = long unsigned int]’:
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_iqk_quants.cpp:3614:13:   required from here
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_iqk_quants.cpp:1848:10: warning: variable ‘ms’ set but not used [-Wunused-but-set-variable]
+ 1848 |     auto ms  = _mm256_set1_epi8(2);
+      |          ^~
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_iqk_quants.cpp:1849:10: warning: variable ‘shift_shuffle’ set but not used [-Wunused-but-set-variable]
+ 1849 |     auto shift_shuffle = _mm256_set_epi64x(0x0707070706060606, 0x0505050504040404, 0x0303030302020202, 0x0101010100000000);
+      |          ^~~~~~~~~~~~~
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_iqk_quants.cpp: In instantiation of ‘void {anonymous}::mul_mat_iq5_k_r4_q8_k(int, const void*, size_t, const DataInfo&, int) [with int nrc_y = 16; size_t = long unsigned int]’:
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_iqk_quants.cpp:3615:23:   required from here
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_iqk_quants.cpp:1848:10: warning: variable ‘ms’ set but not used [-Wunused-but-set-variable]
+ 1848 |     auto ms  = _mm256_set1_epi8(2);
+      |          ^~
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_iqk_quants.cpp:1849:10: warning: variable ‘shift_shuffle’ set but not used [-Wunused-but-set-variable]
+ 1849 |     auto shift_shuffle = _mm256_set_epi64x(0x0707070706060606, 0x0505050504040404, 0x0303030302020202, 0x0101010100000000);
+      |          ^~~~~~~~~~~~~
+[26/159] Building CXX object src/CMakeFiles/llama.dir/llama-build-context.cpp.o
+[27/159] Building CXX object src/CMakeFiles/llama.dir/llama-kda.cpp.o
+[28/159] Building CXX object ggml/src/CMakeFiles/ggml.dir/iqk/iqk_gemm_kquants.cpp.o
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_kquants.cpp: In instantiation of ‘void {anonymous}::mul_mat_qY_K_q8_2_X4_T(int, const void*, size_t, const DataInfo&, int) [with Dequantizer = {anonymous}::DequantizerQ6K_AVX2; int nrc_y = 1; size_t = long unsigned int]’:
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_kquants.cpp:3207:13:   required from here
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_kquants.cpp:908:13: warning: variable ‘d8’ set but not used [-Wunused-but-set-variable]
+  908 |     float   d8[8*nrc_y];
+      |             ^~
+[29/159] Building CXX object src/CMakeFiles/llama.dir/llama-delta-net.cpp.o
+[30/159] Building CXX object src/CMakeFiles/llama.dir/llama-hparams.cpp.o
+[31/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_llama.cpp.o
+[32/159] Building CXX object src/CMakeFiles/llama.dir/unicode-script-data.cpp.o
+[33/159] Building CXX object src/CMakeFiles/llama.dir/llama-model.cpp.o
+[34/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_deci.cpp.o
+[35/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_mistral3.cpp.o
+[36/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_muse_glimmer.cpp.o
+[37/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_baichuan.cpp.o
+[38/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_falcon.cpp.o
+[39/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_starcoder2.cpp.o
+[40/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_xverse.cpp.o
+[41/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_refact.cpp.o
+[42/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_grok.cpp.o
+[43/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_dbrx.cpp.o
+[44/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_starcoder.cpp.o
+[45/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_bloom.cpp.o
+[46/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_mpt.cpp.o
+[47/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_bert.cpp.o
+[48/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_stablelm.cpp.o
+[49/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_laguna.cpp.o
+[50/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_seedoss.cpp.o
+[51/159] Building CXX object ggml/src/CMakeFiles/ggml.dir/iqk/iqk_gemm_ktquants.cpp.o
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_ktquants.cpp: In instantiation of ‘void {anonymous}::mul_mat_iq2_kt_q8_k_zmm(int, const void*, size_t, const DataInfo&, int) [with int nrc_y = 3; size_t = long unsigned int]’:
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_ktquants.cpp:2721:13:   required from here
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_ktquants.cpp:1330:22: warning: variable ‘table’ set but not used [-Wunused-but-set-variable]
+ 1330 |     const uint64_t * table = nrc_y <= 2 ? kt8_value_table<2>() : nullptr;
+      |                      ^~~~~
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_ktquants.cpp: In instantiation of ‘void {anonymous}::mul_mat_iq2_kt_q8_k_zmm(int, const void*, size_t, const DataInfo&, int) [with int nrc_y = 4; size_t = long unsigned int]’:
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_ktquants.cpp:2721:13:   required from here
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_ktquants.cpp:1330:22: warning: variable ‘table’ set but not used [-Wunused-but-set-variable]
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_ktquants.cpp: In instantiation of ‘void {anonymous}::mul_mat_iq2_kt_q8_k_zmm(int, const void*, size_t, const DataInfo&, int) [with int nrc_y = 5; size_t = long unsigned int]’:
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_ktquants.cpp:2721:13:   required from here
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_ktquants.cpp:1330:22: warning: variable ‘table’ set but not used [-Wunused-but-set-variable]
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_ktquants.cpp: In instantiation of ‘void {anonymous}::mul_mat_iq2_kt_q8_k_zmm(int, const void*, size_t, const DataInfo&, int) [with int nrc_y = 6; size_t = long unsigned int]’:
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_ktquants.cpp:2721:13:   required from here
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_ktquants.cpp:1330:22: warning: variable ‘table’ set but not used [-Wunused-but-set-variable]
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_ktquants.cpp: In instantiation of ‘void {anonymous}::mul_mat_iq2_kt_q8_k_zmm(int, const void*, size_t, const DataInfo&, int) [with int nrc_y = 7; size_t = long unsigned int]’:
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_ktquants.cpp:2721:13:   required from here
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_ktquants.cpp:1330:22: warning: variable ‘table’ set but not used [-Wunused-but-set-variable]
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_ktquants.cpp: In instantiation of ‘void {anonymous}::mul_mat_iq2_kt_q8_k_zmm(int, const void*, size_t, const DataInfo&, int) [with int nrc_y = 8; size_t = long unsigned int]’:
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_ktquants.cpp:2721:13:   required from here
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_ktquants.cpp:1330:22: warning: variable ‘table’ set but not used [-Wunused-but-set-variable]
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_ktquants.cpp: In instantiation of ‘void {anonymous}::mul_mat_iq3_kt_q8_k_zmm(int, const void*, size_t, const DataInfo&, int) [with int nrc_y = 3; size_t = long unsigned int]’:
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_ktquants.cpp:2738:13:   required from here
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_ktquants.cpp:1211:22: warning: variable ‘table’ set but not used [-Wunused-but-set-variable]
+ 1211 |     const uint64_t * table = nrc_y <= 2 ? kt8_value_table<1>() : nullptr;
+      |                      ^~~~~
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_ktquants.cpp: In instantiation of ‘void {anonymous}::mul_mat_iq3_kt_q8_k_zmm(int, const void*, size_t, const DataInfo&, int) [with int nrc_y = 4; size_t = long unsigned int]’:
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_ktquants.cpp:2738:13:   required from here
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_ktquants.cpp:1211:22: warning: variable ‘table’ set but not used [-Wunused-but-set-variable]
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_ktquants.cpp: In instantiation of ‘void {anonymous}::mul_mat_iq3_kt_q8_k_zmm(int, const void*, size_t, const DataInfo&, int) [with int nrc_y = 5; size_t = long unsigned int]’:
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_ktquants.cpp:2738:13:   required from here
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_ktquants.cpp:1211:22: warning: variable ‘table’ set but not used [-Wunused-but-set-variable]
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_ktquants.cpp: In instantiation of ‘void {anonymous}::mul_mat_iq3_kt_q8_k_zmm(int, const void*, size_t, const DataInfo&, int) [with int nrc_y = 6; size_t = long unsigned int]’:
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_ktquants.cpp:2738:13:   required from here
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_ktquants.cpp:1211:22: warning: variable ‘table’ set but not used [-Wunused-but-set-variable]
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_ktquants.cpp: In instantiation of ‘void {anonymous}::mul_mat_iq3_kt_q8_k_zmm(int, const void*, size_t, const DataInfo&, int) [with int nrc_y = 7; size_t = long unsigned int]’:
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_ktquants.cpp:2738:13:   required from here
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_ktquants.cpp:1211:22: warning: variable ‘table’ set but not used [-Wunused-but-set-variable]
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_ktquants.cpp: In instantiation of ‘void {anonymous}::mul_mat_iq3_kt_q8_k_zmm(int, const void*, size_t, const DataInfo&, int) [with int nrc_y = 8; size_t = long unsigned int]’:
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_ktquants.cpp:2738:13:   required from here
+/home/abhisheky/LDLS_Project_1/third_party/ik_llama.cpp/ggml/src/iqk/iqk_gemm_ktquants.cpp:1211:22: warning: variable ‘table’ set but not used [-Wunused-but-set-variable]
+[52/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_qwen2.cpp.o
+[53/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_step35.cpp.o
+[54/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_qwen.cpp.o
+[55/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_k2horizon.cpp.o
+[56/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_qwen3.cpp.o
+[57/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_maple.cpp.o
+[58/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_mellum.cpp.o
+[59/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_qwen3next.cpp.o
+[60/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_lfm2.cpp.o
+[61/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_plamo.cpp.o
+[62/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_gpt2.cpp.o
+[63/159] Building CXX object src/CMakeFiles/llama.dir/llama-quantize.cpp.o
+[64/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_lfm3.cpp.o
+[65/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_orion.cpp.o
+[66/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_phi2.cpp.o
+[67/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_phi3.cpp.o
+[68/159] Building CXX object src/CMakeFiles/llama.dir/unicode-data.cpp.o
+[69/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_qwen35.cpp.o
+[70/159] Building CXX object ggml/src/CMakeFiles/ggml.dir/iqk/iqk_quantize.cpp.o
+[71/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_internlm2.cpp.o
+[72/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_codeshell.cpp.o
+[73/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_qwen4exp.cpp.o
+[74/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_gemma.cpp.o
+[75/159] Building CXX object src/CMakeFiles/llama.dir/llama.cpp.o
+[76/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_minicpm.cpp.o
+[77/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_openelm.cpp.o
+[78/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_dflash.cpp.o
+[79/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_gemma2.cpp.o
+[80/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_gemma3.cpp.o
+[81/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_olmo.cpp.o
+[82/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_gptneox.cpp.o
+[83/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_command_r.cpp.o
+[84/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_mamba.cpp.o
+[85/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_gemma4.cpp.o
+[86/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_arctic.cpp.o
+[87/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_openpangu.cpp.o
+[88/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_glm4.cpp.o
+[89/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_bitnet.cpp.o
+[90/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_jais.cpp.o
+[91/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_cohere2.cpp.o
+[92/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_deepseek2.cpp.o
+[93/159] Building CXX object src/CMakeFiles/llama.dir/unicode.cpp.o
+[94/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_cohere2_moe.cpp.o
+[95/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_chatglm.cpp.o
+[96/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_mimo2.cpp.o
+[97/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_t5.cpp.o
+[98/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_dots1.cpp.o
+[99/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_hunyuan.cpp.o
+[100/159] Generating build details from Git
+-- Found Git: /usr/bin/git (found version "2.25.1")
+[101/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_ernie45.cpp.o
+[102/159] Building CXX object common/CMakeFiles/build_info.dir/build-info.cpp.o
+[103/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_flint.cpp.o
+[104/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_openai.cpp.o
+[105/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_deepseek4.cpp.o
+[106/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_bailingmoe2.cpp.o
+[107/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_bailingmoe3.cpp.o
+[108/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_smollm3.cpp.o
+[109/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_xing4.cpp.o
+[110/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_raon1.cpp.o
+[111/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_spark2_5.cpp.o
+[112/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_minimaxm2.cpp.o
+[113/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_minimaxm3.cpp.o
+[114/159] Building CXX object common/CMakeFiles/common.dir/console.cpp.o
+[115/159] Building CXX object src/CMakeFiles/llama.dir/graphs/build_glm5next.cpp.o
+[116/159] Building CXX object common/CMakeFiles/common.dir/llguidance.cpp.o
+[117/159] Building CXX object common/CMakeFiles/common.dir/log.cpp.o
+[118/159] Building CXX object common/CMakeFiles/common.dir/unicode.cpp.o
+[119/159] Building CXX object common/CMakeFiles/common.dir/ngram-map.cpp.o
+[120/159] Building CXX object ggml/src/CMakeFiles/ggml.dir/iqk/iqk_gemm_legacy_quants.cpp.o
+[121/159] Building CXX object common/CMakeFiles/common.dir/ngram-mod.cpp.o
+[122/159] Building CXX object common/CMakeFiles/common.dir/ngram-cache.cpp.o
+[123/159] Building CXX object common/CMakeFiles/common.dir/train.cpp.o
+[124/159] Building CXX object common/CMakeFiles/common.dir/spec-tuner.cpp.o
+[125/159] Building CXX object common/CMakeFiles/common.dir/reasoning-budget.cpp.o
+[126/159] Building CXX object common/CMakeFiles/common.dir/chat-auto-parser-helpers.cpp.o
+[127/159] Building CXX object common/CMakeFiles/common.dir/sampling.cpp.o
+[128/159] Building CXX object common/CMakeFiles/common.dir/jinja/lexer.cpp.o
+[129/159] Building CXX object common/CMakeFiles/common.dir/suffix-tree.cpp.o
+[130/159] Building CXX object common/CMakeFiles/common.dir/chat-auto-parser-generator.cpp.o
+[131/159] Building CXX object common/CMakeFiles/common.dir/jinja/string.cpp.o
+[132/159] Building CXX object src/CMakeFiles/llama.dir/llama-load-tensors.cpp.o
+[133/159] Building CXX object common/CMakeFiles/common.dir/regex-partial.cpp.o
+[134/159] Building CXX object common/CMakeFiles/common.dir/speculative.cpp.o
+[135/159] Building CXX object common/CMakeFiles/common.dir/jinja/parser.cpp.o
+[136/159] Building CXX object common/CMakeFiles/common.dir/chat-peg-parser.cpp.o
+[137/159] Building CXX object common/CMakeFiles/common.dir/json-partial.cpp.o
+[138/159] Building CXX object common/CMakeFiles/common.dir/json-schema-to-grammar.cpp.o
+[139/159] Building CXX object common/CMakeFiles/common.dir/chat-diff-analyzer.cpp.o
+[140/159] Building CXX object common/CMakeFiles/common.dir/jinja/runtime.cpp.o
+[141/159] Building CXX object common/CMakeFiles/common.dir/jinja/caps.cpp.o
+[142/159] Building CXX object examples/perplexity/CMakeFiles/llama-perplexity.dir/perplexity.cpp.o
+[143/159] Building CXX object common/CMakeFiles/common.dir/jinja/value.cpp.o
+[144/159] Building CXX object common/CMakeFiles/common.dir/peg-parser.cpp.o
+[145/159] Building CXX object examples/llama-bench/CMakeFiles/llama-bench.dir/llama-bench.cpp.o
+[146/159] Building CXX object common/CMakeFiles/common.dir/common.cpp.o
+[147/159] Building CXX object common/CMakeFiles/common.dir/chat.cpp.o
+[148/159] Building CXX object ggml/src/CMakeFiles/ggml.dir/iqk/fa/iqk_fa_96_96.cpp.o
+[149/159] Building CXX object ggml/src/CMakeFiles/ggml.dir/iqk/fa/iqk_fa_64_64.cpp.o
+[150/159] Building CXX object ggml/src/CMakeFiles/ggml.dir/iqk/fa/iqk_fa_128_128.cpp.o
+[151/159] Building CXX object ggml/src/CMakeFiles/ggml.dir/iqk/fa/iqk_fa_512_512.cpp.o
+[152/159] Building CXX object ggml/src/CMakeFiles/ggml.dir/iqk/fa/iqk_fa_192_128.cpp.o
+[153/159] Building CXX object ggml/src/CMakeFiles/ggml.dir/iqk/fa/iqk_fa_192_192.cpp.o
+[154/159] Building CXX object ggml/src/CMakeFiles/ggml.dir/iqk/fa/iqk_fa_256_256.cpp.o
+[155/159] Linking CXX shared library ggml/src/libggml.so
+[156/159] Linking CXX shared library src/libllama.so
+[157/159] Linking CXX static library common/libcommon.a
+[158/159] Linking CXX executable bin/llama-perplexity
+[159/159] Linking CXX executable bin/llama-bench

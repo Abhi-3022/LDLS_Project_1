@@ -1,0 +1,11 @@
+model,file,ppl,ppl_err,n_chunks,ctx,threads,maxrss_gb,role
+llama1b-q4,Llama-3.2-1B-Instruct-Q4_K_M.gguf,14.5948,0.38621,45,512,32,1.195,benchmarked
+llama1b-q8,Llama-3.2-1B-Instruct-Q8_0.gguf,14.1191,0.37458,45,512,32,1.687,benchmarked
+llama3b-q4,Llama-3.2-3B-Instruct-Q4_K_M.gguf,10.6285,0.26727,45,512,32,2.461,benchmarked
+granite1b-q4,granite-3.1-1b-a400m-instruct-Q4_K_M.gguf,8.8156,0.19040,56,512,32,1.011,benchmarked
+granite1b-q8,granite-3.1-1b-a400m-instruct-Q8_0.gguf,8.3646,0.17967,56,512,32,1.591,benchmarked
+granite3b-q4,granite-3.1-3b-a800m-instruct-Q4_K_M.gguf,7.7150,0.17726,56,512,32,2.218,benchmarked
+Llama-3.2-1B-Instruct-f16,Llama-3.2-1B-Instruct-f16.gguf,14.1084,0.37419,45,512,32,2.849,reference_only
+Llama-3.2-3B-Instruct-f16,Llama-3.2-3B-Instruct-f16.gguf,10.3080,0.25934,45,512,32,6.859,reference_only
+granite-3.1-1b-a400m-instruct-f16,granite-3.1-1b-a400m-instruct-f16.gguf,8.3294,0.17863,56,512,32,2.846,reference_only
+granite-3.1-3b-a800m-instruct-f16,granite-3.1-3b-a800m-instruct-f16.gguf,7.1981,0.16217,56,512,32,6.792,reference_only

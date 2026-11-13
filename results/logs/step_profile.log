@@ -1,0 +1,26 @@
+[1/24] llama1b-q4 prefill_p512 t=32 done
+[2/24] llama1b-q4 prefill_p4096 t=32 done
+[3/24] llama1b-q4 decode_c1024 t=32 done
+[4/24] llama1b-q4 decode_c4096 t=32 done
+[5/24] llama1b-q4 decode_c8192 t=32 done
+[6/24] llama1b-q4 decode_c16384 t=32 done
+[7/24] llama1b-q4 decode_c1024 t=1 done
+[8/24] llama3b-q4 prefill_p512 t=32 done
+[9/24] llama3b-q4 prefill_p4096 t=32 done
+[10/24] llama3b-q4 decode_c1024 t=32 done
+[11/24] llama3b-q4 decode_c4096 t=32 done
+[12/24] llama3b-q4 decode_c8192 t=32 done
+[13/24] granite1b-q4 prefill_p512 t=32 done
+[14/24] granite1b-q4 prefill_p4096 t=32 done
+[15/24] granite1b-q4 decode_c1024 t=32 done
+[16/24] granite1b-q4 decode_c4096 t=32 done
+[17/24] granite1b-q4 decode_c8192 t=32 done
+[18/24] granite1b-q4 decode_c16384 t=32 done
+[19/24] granite1b-q4 decode_c1024 t=1 done
+[20/24] granite3b-q4 prefill_p512 t=32 done
+[21/24] granite3b-q4 prefill_p4096 t=32 done
+[22/24] granite3b-q4 decode_c1024 t=32 done
+[23/24] granite3b-q4 decode_c4096 t=32 done
+[24/24] granite3b-q4 decode_c8192 t=32 done
+wrote /home/abhisheky/LDLS_Project_1/results/csv/opprof_ops.csv (1800 rows) and opprof_groups.csv (540 rows)
+done

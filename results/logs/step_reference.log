@@ -1,0 +1,13 @@
+precision,Intel(R) Xeon(R) Platinum 8480+,pp,512,0,0,55,1,1874.952655,0.972,e30ad80
+precision,Intel(R) Xeon(R) Platinum 8480+,tg,0,128,512,55,1,123.594627,1.005,e30ad80
+precision,Intel(R) Xeon(R) Platinum 8480+,pp,512,0,0,55,2,1872.702239,0.972,e30ad80
+precision,Intel(R) Xeon(R) Platinum 8480+,tg,0,128,512,55,2,123.962124,1.005,e30ad80
+precision,Intel(R) Xeon(R) Platinum 8480+,pp,512,0,0,55,3,1869.917987,0.972,e30ad80
+precision,Intel(R) Xeon(R) Platinum 8480+,tg,0,128,512,55,3,123.394516,1.003,e30ad80
+precision,Intel(R) Xeon(R) Platinum 8480+,pp,512,0,0,32,1,1707.751493,0.966,e30ad80
+precision,Intel(R) Xeon(R) Platinum 8480+,tg,0,128,512,32,1,129.682922,0.994,e30ad80
+precision,Intel(R) Xeon(R) Platinum 8480+,pp,512,0,0,32,2,1823.707159,0.966,e30ad80
+precision,Intel(R) Xeon(R) Platinum 8480+,tg,0,128,512,32,2,128.083579,0.994,e30ad80
+precision,Intel(R) Xeon(R) Platinum 8480+,pp,512,0,0,32,3,1821.555830,0.965,e30ad80
+precision,Intel(R) Xeon(R) Platinum 8480+,tg,0,128,512,32,3,129.289806,0.994,e30ad80
+done

@@ -1,0 +1,28 @@
+ninja: Entering directory `build-cpu'
+[1/27] Linking CXX static library common/libllama-common-base.a
+[2/27] Building CXX object tools/batched-bench/CMakeFiles/llama-batched-bench.dir/main.cpp.o
+[3/27] Building CXX object tools/completion/CMakeFiles/llama-completion.dir/main.cpp.o
+[4/27] Building CXX object tools/perplexity/CMakeFiles/llama-perplexity.dir/main.cpp.o
+[5/27] Building CXX object tools/llama-bench/CMakeFiles/llama-bench.dir/main.cpp.o
+[6/27] Building CXX object tools/quantize/CMakeFiles/llama-quantize.dir/main.cpp.o
+[7/27] Linking CXX static library vendor/cpp-httplib/libcpp-httplib.a
+[8/27] Building CXX object examples/simple/CMakeFiles/llama-simple.dir/simple.cpp.o
+[9/27] Linking CXX executable bin/llama-simple
+[10/27] Linking CXX shared library bin/libllama-common.so.0.9.0
+[11/27] Creating library symlink bin/libllama-common.so.0 bin/libllama-common.so
+[12/27] Building CXX object examples/gguf/CMakeFiles/llama-gguf.dir/gguf.cpp.o
+[13/27] Linking CXX shared library bin/libllama-batched-bench-impl.so
+[14/27] Linking CXX shared library bin/libllama-quantize-impl.so
+[15/27] Linking CXX shared library bin/libllama-completion-impl.so
+[16/27] Linking CXX shared library bin/libllama-perplexity-impl.so
+[17/27] Linking CXX shared library bin/libllama-bench-impl.so
+[18/27] Linking CXX executable bin/llama-gguf
+[19/27] Linking CXX executable bin/llama-batched-bench
+[20/27] Linking CXX executable bin/llama-quantize
+[21/27] Linking CXX executable bin/llama-completion
+[22/27] Linking CXX executable bin/llama-perplexity
+[23/27] Linking CXX executable bin/llama-bench
+[24/27] Building CXX object tools/tokenize/CMakeFiles/llama-tokenize.dir/tokenize.cpp.o
+[25/27] Linking CXX executable bin/llama-tokenize
+[26/27] Building CXX object tests/CMakeFiles/test-backend-ops.dir/test-backend-ops.cpp.o
+[27/27] Linking CXX executable bin/test-backend-ops

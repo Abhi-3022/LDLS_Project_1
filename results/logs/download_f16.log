@@ -1,0 +1,5 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+OK /Home/abhisheky/LDLS_Project_1/models/f16/Llama-3.2-1B-Instruct-f16.gguf
+OK /Home/abhisheky/LDLS_Project_1/models/f16/granite-3.1-1b-a400m-instruct-f16.gguf
+OK /Home/abhisheky/LDLS_Project_1/models/f16/Llama-3.2-3B-Instruct-f16.gguf
+OK /Home/abhisheky/LDLS_Project_1/models/f16/granite-3.1-3b-a800m-instruct-f16.gguf

@@ -1,0 +1,9 @@
+A  mamba2  thr=1   ggml SSM_SCAN   271.66 us/step (rel err 6.09e-07)   ours[avx512]    87.98 us/step (rel err 1.38e-07)   max|ggml-ours| 1.91e-05
+A  mamba2  thr=8   ggml SSM_SCAN    45.11 us/step (rel err 6.09e-07)   ours[avx512]    17.58 us/step (rel err 1.38e-07)   max|ggml-ours| 1.91e-05
+A  mamba2  thr=32  ggml SSM_SCAN    48.34 us/step (rel err 6.09e-07)   ours[avx512]     9.51 us/step (rel err 1.38e-07)   max|ggml-ours| 1.91e-05
+B  siso    thr=1   ggml custom op    97.02 us/step   direct    93.72 us/step   graph overhead   3.30 us   rel err vs ref 1.86e-07   max|graph-direct| 0.0e+00
+B  siso    thr=8   ggml custom op    29.65 us/step   direct    22.34 us/step   graph overhead   7.31 us   rel err vs ref 1.86e-07   max|graph-direct| 0.0e+00
+B  siso    thr=32  ggml custom op    25.13 us/step   direct    12.07 us/step   graph overhead  13.06 us   rel err vs ref 1.86e-07   max|graph-direct| 0.0e+00
+B  mimo4   thr=1   ggml custom op   169.64 us/step   direct   168.48 us/step   graph overhead   1.16 us   rel err vs ref 1.03e-07   max|graph-direct| 0.0e+00
+B  mimo4   thr=8   ggml custom op    41.78 us/step   direct    33.92 us/step   graph overhead   7.86 us   rel err vs ref 1.03e-07   max|graph-direct| 0.0e+00
+B  mimo4   thr=32  ggml custom op    40.78 us/step   direct    17.65 us/step   graph overhead  23.13 us   rel err vs ref 1.03e-07   max|graph-direct| 0.0e+00

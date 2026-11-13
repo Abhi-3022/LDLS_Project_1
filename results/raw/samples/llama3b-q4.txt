@@ -1,0 +1,37 @@
+### PROMPT: What is the capital of France? Answer in one sentence.
+The capital of France is Paris. [end of text]
+
+
+
+
+### PROMPT: Write a Python function that returns the n-th Fibonacci number.
+**Fibonacci Function**
+=======================
+
+Here is a Python function that uses an iterative approach to calculate the n-th Fibonacci number:
+
+```python
+def fibonacci(n):
+    """
+    Returns the n-th Fibonacci number.
+
+    Args:
+        n (int): The position of the Fibonacci number to calculate.
+
+    Returns:
+        int: The n-th Fibonacci number.
+
+    Raises:
+        ValueError: If n is a negative integer.
+    """
+    if n < 0:
+       
+
+
+
+### PROMPT: Explain in two sentences why the sky is blue.
+The sky appears blue because of a phenomenon called Rayleigh scattering, in which shorter wavelengths of light (such as blue and violet) are scattered more than longer wavelengths (such as red and orange) by the tiny molecules of gases in the Earth's atmosphere. As a result, the blue light is dispersed throughout the atmosphere, giving the sky its blue color, while the longer wavelengths of light are absorbed or continue on their way to our eyes. [end of text]
+
+
+
+

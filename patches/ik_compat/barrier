@@ -1,0 +1,32 @@
+// Minimal std::barrier for GCC 9 (libstdc++ < 11 has no <barrier>).
+// Only the constructor and arrive_and_wait() are used by ik_llama.cpp.
+#pragma once
+#include <condition_variable>
+#include <cstddef>
+#include <mutex>
+
+namespace std {
+template <class CompletionFunction = void>
+class barrier {
+  public:
+    explicit barrier(ptrdiff_t count) : count_(count), left_(count) {}
+    barrier(const barrier &) = delete;
+    barrier & operator=(const barrier &) = delete;
+    void arrive_and_wait() {
+        unique_lock<mutex> lk(m_);
+        const size_t gen = gen_;
+        if (--left_ == 0) {
+            ++gen_;
+            left_ = count_;
+            cv_.notify_all();
+        } else {
+            cv_.wait(lk, [&] { return gen != gen_; });
+        }
+    }
+  private:
+    mutex m_;
+    condition_variable cv_;
+    ptrdiff_t count_, left_;
+    size_t gen_ = 0;
+};
+}  // namespace std

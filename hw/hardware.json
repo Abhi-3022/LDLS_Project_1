@@ -1,0 +1,32 @@
+{
+  "cpu_model": "Intel(R) Xeon(R) Platinum 8480+",
+  "sockets": 2,
+  "cores_per_socket": 56,
+  "threads_per_core": 2,
+  "numa_nodes": 2,
+  "cache_per_instance": {
+    "L1d": "48K",
+    "L1i": "32K",
+    "L2": "2048K",
+    "L3": "107520K"
+  },
+  "max_mhz": "2001.0000",
+  "simd": [
+    "avx2",
+    "avx512_bf16",
+    "avx512_bitalg",
+    "avx512_vbmi2",
+    "avx512_vnni",
+    "avx512_vpopcntdq",
+    "avx512bw",
+    "avx512cd",
+    "avx512dq",
+    "avx512f",
+    "avx512ifma",
+    "avx512vbmi",
+    "avx512vl",
+    "fma"
+  ],
+  "ram_gb": 503.5,
+  "core_type": "homogeneous (no P/E split); SMT siblings excluded"
+}

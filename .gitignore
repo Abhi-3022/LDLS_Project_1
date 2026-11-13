@@ -1,0 +1,18 @@
+# Large / regenerable: recreated by the scripts (see README)
+# venv: uv / requirements.txt
+.venv/
+# models (~49 GB GGUF / weights): scripts/03_get_models.sh
+models/
+# pinned upstream checkouts + stream.c: scripts/01_build.sh (applies patches/)
+third_party/
+# reference tensors (~735 MB): bonus_mamba3/run_bonus.sh -> ref/make_reference.py
+bonus_mamba3/data/
+# compiled binaries
+bonus_mamba3/build/
+tools/readbw
+
+# Python / editor noise
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store

@@ -1,0 +1,13 @@
+host,cpu,test,n_prompt,n_gen,n_depth,threads,rep,tok_s,maxrss_gb,build_commit
+precision,Intel(R) Xeon(R) Platinum 8480+,pp,512,0,0,56,1,178.570256,0.980,e30ad80
+precision,Intel(R) Xeon(R) Platinum 8480+,tg,0,128,512,56,1,8.813257,1.005,e30ad80
+precision,Intel(R) Xeon(R) Platinum 8480+,pp,512,0,0,56,2,189.633554,0.980,e30ad80
+precision,Intel(R) Xeon(R) Platinum 8480+,tg,0,128,512,56,2,8.860146,1.005,e30ad80
+precision,Intel(R) Xeon(R) Platinum 8480+,pp,512,0,0,56,3,206.316453,0.980,e30ad80
+precision,Intel(R) Xeon(R) Platinum 8480+,tg,0,128,512,56,3,9.006614,1.005,e30ad80
+precision,Intel(R) Xeon(R) Platinum 8480+,pp,512,0,0,28,1,199.255928,0.967,e30ad80
+precision,Intel(R) Xeon(R) Platinum 8480+,tg,0,128,512,28,1,11.583332,0.992,e30ad80
+precision,Intel(R) Xeon(R) Platinum 8480+,pp,512,0,0,28,2,201.208698,0.968,e30ad80
+precision,Intel(R) Xeon(R) Platinum 8480+,tg,0,128,512,28,2,11.788622,0.992,e30ad80
+precision,Intel(R) Xeon(R) Platinum 8480+,pp,512,0,0,28,3,198.425483,0.967,e30ad80
+precision,Intel(R) Xeon(R) Platinum 8480+,tg,0,128,512,28,3,12.035519,0.992,e30ad80

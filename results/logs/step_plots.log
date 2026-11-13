@@ -1,0 +1,15 @@
+  wrote plots/bandwidth.png
+  wrote plots/thread_scaling.png
+  wrote plots/decode_vs_context.png
+  wrote plots/prefill_vs_prompt.png
+  wrote plots/memory_vs_context.png
+  wrote plots/pred_vs_measured.png
+  wrote plots/active_vs_total.png
+  wrote plots/op_breakdown_decode.png
+  wrote plots/op_breakdown_prefill.png
+  wrote plots/attention_share.png
+  wrote plots/experts_k_left.png
+  wrote plots/experts_k.png
+  wrote plots/ik_vs_llamacpp.png
+wrote /Home/abhisheky/LDLS_Project_1/results/summary.md
+done

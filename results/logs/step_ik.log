@@ -1,0 +1,76 @@
+[ik] 8 configs x 3 reps -> /home/abhisheky/LDLS_Project_1/results/csv/bench_ik.csv
+llama llama1b-q4    pp p=512   n=0   d=0     t=32 rep=1    1451.64 tok/s  rss=0.97 GB  load=23.2
+llama llama1b-q4    pp p=512   n=0   d=0     t=32 rep=2    1448.32 tok/s  rss=0.97 GB  load=23.2
+llama llama1b-q4    pp p=512   n=0   d=0     t=32 rep=3    1449.59 tok/s  rss=0.97 GB  load=22.1
+llama llama1b-q4    tg p=0     n=128 d=0     t=32 rep=1     135.08 tok/s  rss=0.88 GB  load=22.1
+llama llama1b-q4    tg p=0     n=128 d=0     t=32 rep=2     136.13 tok/s  rss=0.88 GB  load=22.1
+llama llama1b-q4    tg p=0     n=128 d=0     t=32 rep=3     134.59 tok/s  rss=0.88 GB  load=21.1
+llama llama3b-q4    pp p=512   n=0   d=0     t=32 rep=1     567.05 tok/s  rss=2.23 GB  load=21.1 SWAP
+llama llama3b-q4    pp p=512   n=0   d=0     t=32 rep=2     558.43 tok/s  rss=2.23 GB  load=20.2
+llama llama3b-q4    pp p=512   n=0   d=0     t=32 rep=3     503.50 tok/s  rss=2.23 GB  load=21.9
+llama llama3b-q4    tg p=0     n=128 d=0     t=32 rep=1      53.46 tok/s  rss=2.11 GB  load=23.4
+llama llama3b-q4    tg p=0     n=128 d=0     t=32 rep=2      53.28 tok/s  rss=2.11 GB  load=23.4
+llama llama3b-q4    tg p=0     n=128 d=0     t=32 rep=3      53.40 tok/s  rss=2.11 GB  load=22.4
+llama granite1b-q4  pp p=512   n=0   d=0     t=32 rep=1    1623.43 tok/s  rss=0.92 GB  load=21.4
+llama granite1b-q4  pp p=512   n=0   d=0     t=32 rep=2    1582.20 tok/s  rss=0.92 GB  load=21.4
+llama granite1b-q4  pp p=512   n=0   d=0     t=32 rep=3    1577.91 tok/s  rss=0.92 GB  load=20.5
+llama granite1b-q4  tg p=0     n=128 d=0     t=32 rep=1     207.29 tok/s  rss=0.87 GB  load=20.5
+llama granite1b-q4  tg p=0     n=128 d=0     t=32 rep=2     198.94 tok/s  rss=0.87 GB  load=20.5
+llama granite1b-q4  tg p=0     n=128 d=0     t=32 rep=3     226.19 tok/s  rss=0.87 GB  load=19.6
+llama granite3b-q4  pp p=512   n=0   d=0     t=32 rep=1     685.63 tok/s  rss=2.16 GB  load=19.6
+llama granite3b-q4  pp p=512   n=0   d=0     t=32 rep=2     685.49 tok/s  rss=2.16 GB  load=21.3
+llama granite3b-q4  pp p=512   n=0   d=0     t=32 rep=3     686.97 tok/s  rss=2.16 GB  load=21.3
+llama granite3b-q4  tg p=0     n=128 d=0     t=32 rep=1     127.31 tok/s  rss=2.07 GB  load=20.4
+llama granite3b-q4  tg p=0     n=128 d=0     t=32 rep=2     132.62 tok/s  rss=2.07 GB  load=22.1
+llama granite3b-q4  tg p=0     n=128 d=0     t=32 rep=3     132.70 tok/s  rss=2.07 GB  load=22.1
+[ik] 8 configs x 3 reps -> /home/abhisheky/LDLS_Project_1/results/csv/bench_ik.csv
+ik    llama1b-q4    pp p=512   n=0   d=0     t=32 rep=1    2237.96 tok/s  rss=1.18 GB  load=21.1
+ik    llama1b-q4    pp p=512   n=0   d=0     t=32 rep=2    2081.66 tok/s  rss=1.18 GB  load=21.1
+ik    llama1b-q4    pp p=512   n=0   d=0     t=32 rep=3    2279.97 tok/s  rss=1.18 GB  load=21.1
+ik    llama1b-q4    tg p=0     n=128 d=0     t=32 rep=1     132.39 tok/s  rss=1.13 GB  load=22.8
+ik    llama1b-q4    tg p=0     n=128 d=0     t=32 rep=2     137.78 tok/s  rss=1.13 GB  load=22.8
+ik    llama1b-q4    tg p=0     n=128 d=0     t=32 rep=3     129.24 tok/s  rss=1.13 GB  load=22.8
+ik    llama3b-q4    pp p=512   n=0   d=0     t=32 rep=1     849.64 tok/s  rss=2.55 GB  load=22.1 SWAP
+ik    llama3b-q4    pp p=512   n=0   d=0     t=32 rep=2     824.57 tok/s  rss=2.55 GB  load=22.1
+ik    llama3b-q4    pp p=512   n=0   d=0     t=32 rep=3     856.23 tok/s  rss=2.55 GB  load=21.7
+ik    llama3b-q4    tg p=0     n=128 d=0     t=32 rep=1      51.70 tok/s  rss=2.47 GB  load=21.7
+ik    llama3b-q4    tg p=0     n=128 d=0     t=32 rep=2      52.14 tok/s  rss=2.47 GB  load=21.3
+ik    llama3b-q4    tg p=0     n=128 d=0     t=32 rep=3      52.69 tok/s  rss=2.47 GB  load=22.9
+ik    granite1b-q4  pp p=512   n=0   d=0     t=32 rep=1    3684.47 tok/s  rss=0.99 GB  load=24.4
+ik    granite1b-q4  pp p=512   n=0   d=0     t=32 rep=2    3556.26 tok/s  rss=0.99 GB  load=24.4
+ik    granite1b-q4  pp p=512   n=0   d=0     t=32 rep=3    3601.79 tok/s  rss=0.99 GB  load=24.4
+ik    granite1b-q4  tg p=0     n=128 d=0     t=32 rep=1     282.55 tok/s  rss=0.94 GB  load=24.4
+ik    granite1b-q4  tg p=0     n=128 d=0     t=32 rep=2     295.55 tok/s  rss=0.94 GB  load=24.4
+ik    granite1b-q4  tg p=0     n=128 d=0     t=32 rep=3     303.08 tok/s  rss=0.94 GB  load=23.8
+ik    granite3b-q4  pp p=512   n=0   d=0     t=32 rep=1    2085.87 tok/s  rss=2.22 GB  load=23.8
+ik    granite3b-q4  pp p=512   n=0   d=0     t=32 rep=2    2131.88 tok/s  rss=2.22 GB  load=23.8
+ik    granite3b-q4  pp p=512   n=0   d=0     t=32 rep=3    2114.83 tok/s  rss=2.22 GB  load=23.2
+ik    granite3b-q4  tg p=0     n=128 d=0     t=32 rep=1     161.74 tok/s  rss=2.16 GB  load=23.2
+ik    granite3b-q4  tg p=0     n=128 d=0     t=32 rep=2     159.11 tok/s  rss=2.16 GB  load=23.2
+ik    granite3b-q4  tg p=0     n=128 d=0     t=32 rep=3     159.67 tok/s  rss=2.15 GB  load=22.7
+[ik] 8 configs x 3 reps -> /home/abhisheky/LDLS_Project_1/results/csv/bench_ik.csv
+ik    llama1b-q4    pp p=512   n=0   d=0     t=32 rep=1    3223.83 tok/s  rss=1.18 GB  load=22.7
+ik    llama1b-q4    pp p=512   n=0   d=0     t=32 rep=2    2406.34 tok/s  rss=1.18 GB  load=21.8
+ik    llama1b-q4    pp p=512   n=0   d=0     t=32 rep=3    3249.50 tok/s  rss=1.18 GB  load=21.8
+ik    llama1b-q4    tg p=0     n=128 d=0     t=32 rep=1     140.68 tok/s  rss=1.13 GB  load=21.8
+ik    llama1b-q4    tg p=0     n=128 d=0     t=32 rep=2     139.28 tok/s  rss=1.13 GB  load=29.9
+ik    llama1b-q4    tg p=0     n=128 d=0     t=32 rep=3     137.46 tok/s  rss=1.13 GB  load=29.9
+ik    llama3b-q4    pp p=512   n=0   d=0     t=32 rep=1    1575.18 tok/s  rss=2.55 GB  load=31.2
+ik    llama3b-q4    pp p=512   n=0   d=0     t=32 rep=2    1566.19 tok/s  rss=2.55 GB  load=31.2
+ik    llama3b-q4    pp p=512   n=0   d=0     t=32 rep=3    1548.93 tok/s  rss=2.55 GB  load=30.1
+ik    llama3b-q4    tg p=0     n=128 d=0     t=32 rep=1      56.14 tok/s  rss=2.47 GB  load=36.2
+ik    llama3b-q4    tg p=0     n=128 d=0     t=32 rep=2      55.24 tok/s  rss=2.47 GB  load=36.6
+ik    llama3b-q4    tg p=0     n=128 d=0     t=32 rep=3      54.66 tok/s  rss=2.47 GB  load=37.0
+ik    granite1b-q4  pp p=512   n=0   d=0     t=32 rep=1    4064.26 tok/s  rss=0.99 GB  load=37.3
+ik    granite1b-q4  pp p=512   n=0   d=0     t=32 rep=2    3996.21 tok/s  rss=0.99 GB  load=37.3
+ik    granite1b-q4  pp p=512   n=0   d=0     t=32 rep=3    3952.30 tok/s  rss=0.99 GB  load=37.3
+ik    granite1b-q4  tg p=0     n=128 d=0     t=32 rep=1     278.54 tok/s  rss=0.94 GB  load=44.2
+ik    granite1b-q4  tg p=0     n=128 d=0     t=32 rep=2     271.46 tok/s  rss=0.93 GB  load=44.2
+ik    granite1b-q4  tg p=0     n=128 d=0     t=32 rep=3     295.67 tok/s  rss=0.94 GB  load=44.2
+ik    granite3b-q4  pp p=512   n=0   d=0     t=32 rep=1    2187.88 tok/s  rss=2.22 GB  load=44.0
+ik    granite3b-q4  pp p=512   n=0   d=0     t=32 rep=2    2355.73 tok/s  rss=2.22 GB  load=44.0
+ik    granite3b-q4  pp p=512   n=0   d=0     t=32 rep=3    2444.31 tok/s  rss=2.22 GB  load=50.2
+ik    granite3b-q4  tg p=0     n=128 d=0     t=32 rep=1     154.33 tok/s  rss=2.16 GB  load=50.2
+ik    granite3b-q4  tg p=0     n=128 d=0     t=32 rep=2     157.66 tok/s  rss=2.16 GB  load=47.6
+ik    granite3b-q4  tg p=0     n=128 d=0     t=32 rep=3     153.00 tok/s  rss=2.16 GB  load=47.0
+done

@@ -1,0 +1,12 @@
+config: {'d_model': 2048, 'd_inner': 4096, 'H': 64, 'P': 64, 'N': 128, 'S': 32, 'steps': 1000, 'seed': 0}
+wrote /Home/abhisheky/LDLS_Project_1/bonus_mamba3/data/siso
+SISO checks: {'torch_fp32_vs_fp64_rel': 1.408504189032643e-07, 'ref_us_per_step_fp64': 1219.5074558258057, 'siso_ref_vs_mimo_ref_r1': 2.765864705516522e-16, 'siso_step_ref_vs_chunked_fwd_ref': 5.9125050603477164e-08}
+MIMO R=1 checks: {'torch_fp32_vs_fp64_rel': 1.408504189032643e-07, 'ref_us_per_step_fp64': 1219.5074558258057, 'siso_ref_vs_mimo_ref_r1': 2.765864705516522e-16, 'siso_step_ref_vs_chunked_fwd_ref': 5.9125050603477164e-08}
+wrote /Home/abhisheky/LDLS_Project_1/bonus_mamba3/data/mimo1
+MIMO R=2 checks: {'torch_fp32_vs_fp64_rel': 1.923061077778431e-07, 'ref_us_per_step_fp64': 1237.6291751861572}
+wrote /Home/abhisheky/LDLS_Project_1/bonus_mamba3/data/mimo2
+MIMO R=4 checks: {'torch_fp32_vs_fp64_rel': 1.9136583895292802e-07, 'ref_us_per_step_fp64': 953.9029598236084}
+wrote /Home/abhisheky/LDLS_Project_1/bonus_mamba3/data/mimo4
+MIMO R=8 checks: {'torch_fp32_vs_fp64_rel': 1.803030626769666e-07, 'ref_us_per_step_fp64': 1587.9552364349365}
+wrote /Home/abhisheky/LDLS_Project_1/bonus_mamba3/data/mimo8
+wrote /Home/abhisheky/LDLS_Project_1/bonus_mamba3/data/mamba2
