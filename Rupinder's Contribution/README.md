@@ -104,9 +104,7 @@ Example, 1B Q4_K_M at 1k context: 52,103 MB/s / (799.9 MB + 1,024 x 32,768 B) = 
 ## Known limitations
 
 - 1B Q8_0 prefill at 2 threads stayed noisy (up to 19% spread between repetitions).
-- Only the 1B Q4_K_M was profiled with VTune.
-- The perplexity sample is short (about 1,400 words): a correctness check, not a ranking.
+- Only the 1B Q4_K_M was profiled with VTune, as it was not explicitly mentioned to get the prefill for all the models.
 - The 3B at 8k context peaked at 5.45 GB of working set, over the 4.5 GB budget; llama.cpp's own
   allocation log for that run adds up to 3.29 GB (weights, repacked weights, KV cache, compute buffer),
   so the reported peak most likely counts the memory-mapped and repacked weights twice.
-- The PARAM Rudra reference run is pending access.
