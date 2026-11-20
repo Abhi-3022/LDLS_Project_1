@@ -1,0 +1,11 @@
+[20:24:15] module: loaded compiler/gcc/12.3
+[20:24:17] spack: loaded cmake@3.29.2%gcc@12.2.0
+[20:24:18] spack: loaded numactl@2.0.14%gcc@13.2.0
+[20:24:18] using gcc 12.3.0 (/home/apps/gcc-12.3/bin/gcc), cmake 3.29.2, numactl /home/apps/spack/opt/spack/linux-almalinux8-cascadelake/gcc-13.2.0/numactl-2.0.14-cl74ohoqq5hiksstuz6b5qxnf64psrr7/bin/numactl
+[20:24:18] host=rdcn25 job=187685 partition=cpu allowed_cpus=0-3
+[20:24:18] physical cores=4 sockets=1 socket0 cores=4 socket0 numa nodes=0 numactl=yes KV=q8_0
+[20:24:18] note: 4 physical cores allocated (a Rudra CPU node has 48): shared node, not exclusive
+node record written to /home/bapic_iiitd/3_group/ajit/paramrudra-scripts/results/rudra_187685/node
+[20:24:21] 1. STREAM + read-only bandwidth, 1 and 4 threads, 3 runs each
+[20:24:51] 2. reference run: llama-bench 1B Q4_K_M -p 512 -n 128 -r 3, 4 threads (socket)
+[20:25:12] 3. llama-completion timings: 512-token prompt, 128 decoded tokens, 3 runs

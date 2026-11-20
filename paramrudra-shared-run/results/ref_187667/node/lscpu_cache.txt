@@ -1,0 +1,2 @@
+lscpu: invalid option -- 'C'
+Try 'lscpu --help' for more information.

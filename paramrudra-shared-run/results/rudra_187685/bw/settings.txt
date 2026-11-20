@@ -1,0 +1,1 @@
+placement=socket cpus=0,1,2,3 stream_n=80000000 ntimes=10 readbw_gib=2

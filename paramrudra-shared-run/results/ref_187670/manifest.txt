@@ -1,0 +1,45 @@
+date_start: 2026-11-20T17:27:26+05:30
+job_id: 187670
+job_name: p1-ref
+node: rdcn20
+partition: cpu
+account: nsmext
+slurm_cpus_on_node: 4
+slurm_mem_per_node_MB: 8192
+allowed_cpus: 0-3
+physical_cores_used: 4
+sockets: 1
+socket0_cores: 4
+llama_cpp_commit: 827466b9efa0
+llama_cpp_local_changes: 0 files
+llama_bench: /home/bapic_iiitd/3_group/ajit/paramrudra-scripts/third_party/llama.cpp/build-rudra/bin/llama-bench
+built_on_cpu: Intel(R) Xeon(R) Gold 6240R CPU @ 2.40GHz
+compiler_c: /home/apps/gcc-12.3/bin/gcc
+compiler_cxx: /home/apps/gcc-12.3/bin/g++ (12.3.0)
+cmake: /home/apps/spack/opt/spack/linux-almalinux8-cascadelake/oneapi-2024.0.0/cmake-3.29.2-uw342fy2rz224rjpp2k4cznk7trmnzdx/bin/cmake
+cmake_CMAKE_BUILD_TYPE: Release
+cmake_GGML_NATIVE: ON
+cmake_GGML_OPENMP: ON
+cmake_GGML_AVX512: OFF
+cmake_GGML_CPU_REPACK: ON
+cmake_BUILD_SHARED_LIBS: ON
+march_native_resolves_to: cascadelake
+simd: avx avx2 avx512_vnni avx512bw avx512cd avx512dq avx512f avx512vl fma sse4_2 
+modules_loaded: compiler/gcc/12.3 spack/spack 
+spack_loaded: cmake@3.29.2%gcc@=12.2.0 numactl@2.0.14%gcc@=13.2.0 
+gcc_runtime: 12.3.0 (/home/apps/gcc-12.3/bin/gcc)
+numactl: /home/apps/spack/opt/spack/linux-almalinux8-cascadelake/gcc-13.2.0/numactl-2.0.14-cl74ohoqq5hiksstuz6b5qxnf64psrr7/bin/numactl
+model: /home/bapic_iiitd/3_group/ajit/paramrudra-scripts/models/Llama-3.2-1B-Instruct-Q4_K_M.gguf
+model_bytes: 807694464
+model_sha256: 6f85a640a97cf2bf5b8e764087b1e83da0fdb51d7c9fab7d0fece9385611df83
+model_sha256_expected: 6f85a640a97cf2bf5b8e764087b1e83da0fdb51d7c9fab7d0fece9385611df83
+kv_cache: q8_0 (llama-bench args: -ctk q8_0 -ctv q8_0 -fa 1)
+repeats: 3
+omp_env: OMP_PROC_BIND=close OMP_PLACES=cores
+ref_threads: 4
+cross_modes: interleave
+reused: T1_socket from job 187669 on rdcn20 (/home/bapic_iiitd/3_group/ajit/paramrudra-scripts/results/ref_187669)
+reused: T2_socket from job 187669 on rdcn20 (/home/bapic_iiitd/3_group/ajit/paramrudra-scripts/results/ref_187669)
+reused: T3_socket from job 187669 on rdcn20 (/home/bapic_iiitd/3_group/ajit/paramrudra-scripts/results/ref_187669)
+date_end: 2026-11-20T17:27:48+05:30
+job_runtime_s: 22

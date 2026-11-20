@@ -1,0 +1,36 @@
+==========================================
+SLURM_CLUSTER_NAME = paramrudra
+SLURM_ARRAY_JOB_ID = 
+SLURM_ARRAY_TASK_ID = 
+SLURM_ARRAY_TASK_COUNT = 
+SLURM_ARRAY_TASK_MAX = 
+SLURM_ARRAY_TASK_MIN = 
+SLURM_JOB_ACCOUNT = nsmext
+SLURM_JOB_ID = 187669
+SLURM_JOB_NAME = p1-ref
+SLURM_JOB_NODELIST = rdcn20
+SLURM_JOB_USER = bapic_iiitd
+SLURM_JOB_UID = 56023
+SLURM_JOB_PARTITION = cpu
+SLURM_TASK_PID = 395474
+SLURM_SUBMIT_DIR = /home/bapic_iiitd/3_group/ajit/paramrudra-scripts
+SLURM_CPUS_ON_NODE = 4
+SLURM_NTASKS = 1
+SLURM_TASK_PID = 395474
+==========================================
+
+#### /home/bapic_iiitd/3_group/ajit/paramrudra-scripts/results/ref_187669
+
+== reference_summary ==
+ test  threads  placement  kv_type  tok_s_mean  tok_s_std  tok_s_min  tok_s_max      per_repeat_tok_s  peak_rss_GB                             source
+pp512        1     socket     q8_0       57.37       0.01      57.36      57.37     57.36 57.37 57.37        1.323                           this job
+pp512        2     socket     q8_0      111.28       0.45     110.87     111.76  110.87 111.21 111.76        1.322                           this job
+pp512        3     socket     q8_0      156.44       0.06     156.37      156.5   156.37 156.45 156.5        1.322                           this job
+pp512        4     socket     q8_0      211.18       0.44     210.91     211.69  210.95 210.91 211.69               job 187667 on rdcn20 (ref_187667)
+tg128        1     socket     q8_0       13.58       0.01      13.57      13.59     13.57 13.58 13.59        1.323                           this job
+tg128        2     socket     q8_0       24.26       0.04      24.22       24.3      24.22 24.26 24.3        1.322                           this job
+tg128        3     socket     q8_0       33.35       0.01      33.34      33.36     33.34 33.36 33.35        1.322                           this job
+tg128        4     socket     q8_0       42.75       0.01      42.74      42.76     42.76 42.76 42.74               job 187667 on rdcn20 (ref_187667)
+best pp512: 211.18 +- 0.44 tok/s at 4 threads, placement socket
+best tg128: 42.75 +- 0.01 tok/s at 4 threads, placement socket
+report section written: /home/bapic_iiitd/3_group/ajit/paramrudra-scripts/results/ref_187669/REPORT.md

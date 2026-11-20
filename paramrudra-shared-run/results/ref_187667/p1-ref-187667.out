@@ -1,0 +1,30 @@
+==========================================
+SLURM_CLUSTER_NAME = paramrudra
+SLURM_ARRAY_JOB_ID = 
+SLURM_ARRAY_TASK_ID = 
+SLURM_ARRAY_TASK_COUNT = 
+SLURM_ARRAY_TASK_MAX = 
+SLURM_ARRAY_TASK_MIN = 
+SLURM_JOB_ACCOUNT = nsmext
+SLURM_JOB_ID = 187667
+SLURM_JOB_NAME = p1-ref
+SLURM_JOB_NODELIST = rdcn20
+SLURM_JOB_USER = bapic_iiitd
+SLURM_JOB_UID = 56023
+SLURM_JOB_PARTITION = cpu
+SLURM_TASK_PID = 395163
+SLURM_SUBMIT_DIR = /home/bapic_iiitd/3_group/ajit/paramrudra-scripts
+SLURM_CPUS_ON_NODE = 4
+SLURM_NTASKS = 1
+SLURM_TASK_PID = 395163
+==========================================
+
+#### /home/bapic_iiitd/3_group/ajit/paramrudra-scripts/results/ref_187667
+
+== reference_summary ==
+ test  threads  placement  kv_type  tok_s_mean  tok_s_std  tok_s_min  tok_s_max      per_repeat_tok_s  peak_rss_GB
+pp512        4     socket     q8_0      211.18       0.44     210.91     211.69  210.95 210.91 211.69             
+tg128        4     socket     q8_0       42.75       0.01      42.74      42.76     42.76 42.76 42.74             
+best pp512: 211.18 +- 0.44 tok/s at 4 threads, placement socket
+best tg128: 42.75 +- 0.01 tok/s at 4 threads, placement socket
+report section written: /home/bapic_iiitd/3_group/ajit/paramrudra-scripts/results/ref_187667/REPORT.md

@@ -1,0 +1,1 @@
+gcc=12.3.0 march=native on  Intel(R) Xeon(R) Gold 6240R CPU @ 2.40GHz stream_n=80000000 ntimes=10
