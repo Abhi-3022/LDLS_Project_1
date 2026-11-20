@@ -149,3 +149,9 @@ See `bonus_mamba3/README.md`. In short:
 | Required plots (decode vs context, prefill vs prompt, threads, op breakdown, predicted vs measured) | done | `plots/` |
 | Report (4 pages), talk | done | `report/report.pdf`, `slides/talk.pptx`, `slides/talk_3min.md` |
 | Bonus: SISO + MIMO-4 kernels, 1,000-step check, time + arithmetic intensity vs Mamba-2, answer, ggml op | done | `bonus_mamba3/` |
+
+## Contributions
+Rupinder: Option Dense transformer baseline along with the Bonus Mamba-3 Implementation on Laptop
+Abhishek: Option Dense transformer baseline and MoE (Granite-3.1) along with the Mamba-3 Implementation on Precision cluster (Cluster login node)
+Ajit: Option Dense transformer baseline along with mamba-3 and param-rudra
+Everything is being run together in group.
