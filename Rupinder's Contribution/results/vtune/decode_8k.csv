@@ -1,0 +1,47 @@
+Function,CPU Time,CPU Time:Effective Time,CPU Time:Spin Time,CPU Time:Spin Time:Imbalance or Serial Spinning,CPU Time:Spin Time:Lock Contention,CPU Time:Spin Time:Other,CPU Time:Overhead Time,CPU Time:Overhead Time:Creation,CPU Time:Overhead Time:Scheduling,CPU Time:Overhead Time:Reduction,CPU Time:Overhead Time:Atomics,CPU Time:Overhead Time:Other,Module,Function (Full),Source File,Start Address
+ggml_vec_dot_f16_f32,67.937512,67.937512,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ggml-cpu.dll,ggml_vec_dot_f16_f32,vec.cpp,0x180053ce0
+ggml_vec_mad_f16_f32,45.691812,45.691812,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ggml-cpu.dll,"ggml_vec_mad_f16_f32(const int, float *, const unsigned short *, const float)",vec.h,0x1800a4460
+vcomp_barrier,28.515776,0.0,28.515776,0.107020,0.0,28.408757,0.0,0.0,0.0,0.0,0.0,0.0,VCOMP140.DLL,vcomp_barrier,[Unknown],0x180007200
+ggml_gemv_q4_K_8x8_q8_K,25.510566,25.510566,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ggml-cpu.dll,ggml_gemv_q4_K_8x8_q8_K,repack.cpp,0x180131860
+ggml_vec_dot_q6_K_q8_K,20.669305,20.669305,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ggml-cpu.dll,ggml_vec_dot_q6_K_q8_K,quants.c,0x1801208b0
+expf,17.357338,17.357338,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ucrtbase.dll,expf,[Unknown],0x1800a8740
+ggml_compute_forward_flash_attn_ext_f16_one_chunk,9.898216,9.898216,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ggml-cpu.dll,"ggml_compute_forward_flash_attn_ext_f16_one_chunk(const struct ggml_compute_params *, struct ggml_tensor *, int, int, __int64, __int64, float *, __int64)",ops.cpp,0x18007d180
+[Import thunk expf],0.717364,0.717364,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ggml-cpu.dll,[Import thunk expf],[Unknown],0x180135389
+NtDelayExecution,0.550164,0.0,0.550164,0.0,0.0,0.550164,0.0,0.0,0.0,0.0,0.0,0.0,ntdll.dll,NtDelayExecution,[Unknown],0x180166a50
+hsum_float_8,0.243183,0.243183,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ggml-cpu.dll,hsum_float_8,quants.c,0x180120b90
+func@0x180004724,0.182601,0.0,0.182601,0.0,0.0,0.182601,0.0,0.0,0.0,0.0,0.0,0.0,VCOMP140.DLL,func@0x180004724,[Unknown],0x180004724
+ggml_compute_forward_mul_mat_one_chunk,0.166423,0.166423,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ggml-cpu.dll,"ggml_compute_forward_mul_mat_one_chunk(const struct ggml_compute_params *, struct ggml_tensor *, const ggml_type, const __int64, const __int64, const __int64, const __int64, const __int64)",ggml-cpu.c,0x1800ccd60
+atomic_fetch_add_explicit,0.105189,0.105189,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ggml-cpu.dll,"atomic_fetch_add_explicit(long *, long, memory_order)",ggml-cpu.c,0x1800c9630
+UnmapViewOfFile,0.104330,0.104330,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,KERNELBASE.dll,UnmapViewOfFile,[Unknown],0x1800c27f0
+aligned_free,0.076113,0.076113,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ucrtbase.dll,aligned_free,[Unknown],0x18006a800
+atomic_load_explicit,0.074366,0.074366,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ggml-cpu.dll,"atomic_load_explicit(long *, memory_order)",ggml-cpu.c,0x1800c9640
+ggml_vec_scale_f32,0.061187,0.061187,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ggml-cpu.dll,"ggml_vec_scale_f32(const int, float *, const float)",vec.h,0x1800a5b90
+NtWaitForSingleObject,0.051220,0.0,0.051220,0.0,0.0,0.051220,0.0,0.0,0.0,0.0,0.0,0.0,ntdll.dll,NtWaitForSingleObject,[Unknown],0x180166450
+log2,0.047291,0.047291,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ucrtbase.dll,log2,[Unknown],0x18004f390
+ggml_type_size,0.045536,0.045536,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ggml-base.dll,ggml_type_size,ggml.c,0x1800d4240
+func@0x18001cb40,0.045355,0.045355,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,VCRUNTIME140.dll,func@0x18001cb40,[Unknown],0x18001cb40
+quantize_row_q8_K_ref,0.045099,0.045099,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ggml-base.dll,quantize_row_q8_K_ref,ggml-quants.c,0x180092f70
+RtlDelayExecution,0.044814,0.0,0.044814,0.0,0.0,0.044814,0.0,0.0,0.0,0.0,0.0,0.0,ntdll.dll,RtlDelayExecution,[Unknown],0x1800d3160
+ggml_compute_forward_flash_attn_ext_f16,0.031047,0.031047,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ggml-cpu.dll,"ggml_compute_forward_flash_attn_ext_f16(const struct ggml_compute_params *, struct ggml_tensor *)",ops.cpp,0x18007ca80
+ggml::cpu::repack::extra_buffer_type::get_tensor_traits,0.030788,0.030788,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ggml-cpu.dll,ggml::cpu::repack::extra_buffer_type::get_tensor_traits(struct ggml_tensor const *),repack.cpp,0x1800f95b0
+fabsf,0.030329,0.030329,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ggml-base.dll,fabsf,corecrt_math.h,0x180093020
+ggml_flash_attn_ext_reduce_partials,0.030106,0.030106,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ggml-cpu.dll,"ggml_flash_attn_ext_reduce_partials(const struct ggml_compute_params *, struct ggml_tensor *, const __int64, const __int64)",ops.cpp,0x18009ad30
+"ggml::cpu::repack::tensor_traits<struct block_q4_K,8,8,15>::forward_mul_mat",0.029677,0.029677,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ggml-cpu.dll,"ggml::cpu::repack::tensor_traits<struct block_q4_K,8,8,15>::forward_mul_mat(struct ggml_compute_params *,struct ggml_tensor *)",repack.cpp,0x1800e4d20
+[Unknown stack frame(s)],0.028316,0.028316,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,[Unknown],[Unknown stack frame(s)],[Unknown],0x0
+"std::vector<unsigned char,std::allocator<unsigned char> >::{dtor}",0.021280,0.021280,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,llama-bench-impl.dll,"std::vector<unsigned char,std::allocator<unsigned char> >::{dtor}",vector,0x180060b3b
+func@0x180483f70,0.018689,0.018689,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,llama.dll,func@0x180483f70,[Unknown],0x180483f70
+SwitchToThread,0.016720,0.0,0.016720,0.0,0.0,0.016720,0.0,0.0,0.0,0.0,0.0,0.0,KERNEL32.DLL,SwitchToThread,[Unknown],0x180031080
+memset,0.015921,0.015921,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,VCRUNTIME140.dll,memset,[Unknown],0x18001f030
+SwitchToThread,0.015902,0.0,0.015902,0.0,0.0,0.015902,0.0,0.0,0.0,0.0,0.0,0.0,KERNELBASE.dll,SwitchToThread,[Unknown],0x1800b57e0
+free_base,0.015739,0.015739,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ucrtbase.dll,free_base,[Unknown],0x180012d60
+func@0x1800022c0,0.015576,0.0,0.015576,0.0,0.0,0.015576,0.0,0.0,0.0,0.0,0.0,0.0,VCOMP140.DLL,func@0x1800022c0,[Unknown],0x1800022c0
+memcpy,0.015570,0.015570,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,VCRUNTIME140.dll,memcpy,[Unknown],0x18001f020
+ggml_row_size,0.015381,0.015381,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ggml-base.dll,ggml_row_size,ggml.c,0x1800d0ed0
+ggml_compute_forward_get_rows_f32,0.014997,0.014997,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ggml-cpu.dll,"ggml_compute_forward_get_rows_f32(const struct ggml_compute_params *, struct ggml_tensor *)",ops.cpp,0x180084950
+ggml_is_contiguous,0.014913,0.014913,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ggml-base.dll,ggml_is_contiguous,ggml.c,0x1800cb3c0
+ggml_cpu_try_fuse_ops,0.014823,0.014823,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ggml-cpu.dll,"ggml_cpu_try_fuse_ops(const struct ggml_cgraph *, const int, const struct ggml_compute_params *, const struct ggml_cplan *)",ggml-cpu.c,0x1800cde80
+ggml_is_empty,0.014567,0.014567,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ggml-base.dll,ggml_is_empty,ggml.c,0x1800cb630
+func@0x18001e580,0.014485,0.014485,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,VCRUNTIME140.dll,func@0x18001e580,[Unknown],0x18001e580
+aligned_malloc,0.014395,0.014395,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ucrtbase.dll,aligned_malloc,[Unknown],0x18006a830
+func@0x1800d31b9,0.012498,0.0,0.012498,0.0,0.0,0.012498,0.0,0.0,0.0,0.0,0.0,0.0,ntdll.dll,func@0x1800d31b9,[Unknown],0x1800d31b9
+CloseHandle,0.000015,0.000015,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,KERNELBASE.dll,CloseHandle,[Unknown],0x18001ea80
