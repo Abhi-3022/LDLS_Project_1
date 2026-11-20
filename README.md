@@ -9,8 +9,8 @@ and implements and verifies a Mamba-3 SISO and MIMO decode step in C++ with SIMD
 Everything is scripted. Raw results are CSV under `results/csv`, figures under `plots/`,
 and every key number with its spread is collected in `results/summary.md`.
 
-**Deliverables:** `report/report.pdf` (4 pages; source `report/report.tex`, built with tectonic) ·
-`slides/talk.pptx` (12 slides with speaker notes, built by `slides/make_slides.py` from the CSVs) ·
+**Deliverables:** `report/report.pdf` (4 pages; source `report/report.tex`) ·
+`slides/talk.pptx`·
 `bonus_mamba3/` (kernels, verification, `results/summary.md` with the MIMO answer).
 
 ## Quick start
