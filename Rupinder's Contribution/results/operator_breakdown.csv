@@ -1,0 +1,7 @@
+operator_type,prefill_4k,decode_1k,decode_8k
+Thread sync (waiting),8.0,17.6,13.5
+Attention,24.8,18.7,64.8
+Weight matmul Q4_K,55.3,37.6,11.7
+Weight matmul Q6_K,9.6,25.0,9.5
+Weight matmul other,0.6,0.5,0.2
+"Other (norm, RoPE, SiLU, add, runtime)",1.7,0.5,0.3

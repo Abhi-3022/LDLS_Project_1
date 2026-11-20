@@ -1,0 +1,9 @@
+model,context,weight_bytes,kv_bytes_per_token,bytes_per_token,predicted_tok_s,predicted_tok_s_whole_file
+Llama-3.2-1B-Instruct-Q4_K_M.gguf,1024,799862912,32768,833417344,62.52,61.94
+Llama-3.2-1B-Instruct-Q4_K_M.gguf,8192,799862912,32768,1068298368,48.77,48.42
+Llama-3.2-1B-Instruct-Q4_K_M.gguf,16384,799862912,32768,1336733824,38.98,38.75
+Llama-3.2-1B-Instruct-Q8_0.gguf,1024,1313251456,32768,1346805888,38.69,38.46
+Llama-3.2-1B-Instruct-Q8_0.gguf,8192,1313251456,32768,1581686912,32.94,32.78
+Llama-3.2-1B-Instruct-Q8_0.gguf,16384,1313251456,32768,1850122368,28.16,28.04
+Llama-3.2-3B-Instruct-Q4_K_M.gguf,1024,2011539712,114688,2128980224,24.47,24.38
+Llama-3.2-3B-Instruct-Q4_K_M.gguf,8192,2011539712,114688,2951063808,17.66,17.61
