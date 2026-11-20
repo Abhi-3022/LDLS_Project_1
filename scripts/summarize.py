@@ -106,6 +106,28 @@ def main():
         top["share %"] = (100 * top.share).round(1)
         L += ["## Top-3 operators per phase\n", top[["model", "phase", "context", "op", "name", "ms_per_token", "share %"]].round(3).to_markdown(index=False), ""]
 
+    lt = load("llama_timings.csv")
+    if lt is not None:
+        rows = []
+        for (m, t), d in lt.groupby(["model", "threads"]):
+            r = {"model": m, "threads": t}
+            for ph in ("prefill", "decode"):
+                p = d[(d.source == "llama_perf") & (d.phase == ph)].tok_s
+                b = d[(d.source == "llama-bench") & (d.phase == ph)].tok_s
+                r[f"{ph} llama_perf"] = f"{p.mean():.1f} ± {p.std():.1f}"
+                r[f"{ph} llama-bench"] = f"{b.mean():.1f} ± {b.std():.1f}"
+                r[f"{ph} perf/bench"] = round(p.mean() / b.mean(), 3)
+            s = d[(d.source == "llama_perf") & (d.phase == "sampling")].ms_per_token.mean()
+            dec = d[(d.source == "llama_perf") & (d.phase == "decode")].ms_per_token.mean()
+            r["sampling ms/tok"] = round(s, 3)
+            r["sampling % of decode"] = round(100 * s / (s + dec), 1)
+            r["max RSS GB"] = round(d.maxrss_gb.max(), 2)
+            rows.append(r)
+        L += ["## llama.cpp's own timings (llama-completion perf print) vs llama-bench (tok/s)\n",
+              "Same model, pinning and threads; 512-token prompt then 128 greedy tokens (llama-bench: pp512, tg128 at depth 512). "
+              "Sampling is greedy argmax over the full vocabulary, which llama-bench does not run.\n",
+              pd.DataFrame(rows).to_markdown(index=False), ""]
+
     e = load("bench_experts.csv")
     if e is not None:
         g = ms(e, ["model", "test", "n_depth"])
