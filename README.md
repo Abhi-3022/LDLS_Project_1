@@ -157,4 +157,4 @@ Abhishek: Option Dense transformer baseline and MoE (Granite-3.1) along with the
 
 Ajit: Option Dense transformer baseline along with mamba-3 and param-rudra
 
-Everything is being run together in group.
+Everything was run together in group.
