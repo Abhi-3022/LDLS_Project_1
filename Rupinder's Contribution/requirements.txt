@@ -1,0 +1,4 @@
+gguf         # read tensor sizes and model shape from the GGUF files (step 4)
+numpy
+matplotlib   # plots
+# bonus only (Mamba-3 reference): torch, einops
