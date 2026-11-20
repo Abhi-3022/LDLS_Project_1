@@ -1,0 +1,9 @@
+common_perf_print:    sampling time =      36.05 ms
+common_perf_print:    samplers time =      12.17 ms /   640 tokens
+common_perf_print:        load time =     537.13 ms
+common_perf_print: prompt eval time =    2436.14 ms /   512 tokens (    4.76 ms per token,   210.17 tokens per second)
+common_perf_print:        eval time =    3652.32 ms /   127 runs   (   28.76 ms per token,    34.77 tokens per second)
+common_perf_print:       total time =    6128.31 ms /   639 tokens
+common_perf_print: unaccounted time =       3.80 ms /   0.1 %      (total - sampling - prompt eval - eval) / (total)
+common_perf_print:    graphs reused =        126
+common_perf_print:   graph reallocs =          0    /     0        (same size) / (changed size)

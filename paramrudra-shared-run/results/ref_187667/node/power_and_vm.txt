@@ -1,0 +1,5 @@
+governor: performance
+max_freq_khz: 4000000
+smt: on
+thp: [always] madvise never
+numa_balancing: 1

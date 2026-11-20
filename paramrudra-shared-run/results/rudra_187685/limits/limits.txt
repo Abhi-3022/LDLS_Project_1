@@ -1,0 +1,105 @@
+date: 2026-11-20T18:15:02+05:30
+host: login02
+user: bapic_iiitd
+slurm: slurm 23.11.5
+
+===== associations (account, partition, QOS) =====
+$ sacctmgr -n -P show assoc user=bapic_iiitd format=Cluster,Account,User,Partition,QOS,DefaultQOS,GrpTRES,MaxTRES,MaxTRESPerNode,MaxJobs,MaxSubmit,MaxWall
+paramrudra|nsmext|bapic_iiitd||aicte_qip|aicte_qip||||||
+
+===== QOS limits (aicte_qip) =====
+$ sacctmgr -n -P show qos aicte_qip format=Name,Priority,MaxWall,MaxTRES,MaxTRESPerNode,MaxTRESPU,MaxJobsPU,MaxSubmitPU,GrpTRES,MinTRES,Flags
+aicte_qip|0|00:05:00|||cpu=4,node=1|2||||
+
+===== partitions =====
+$ sinfo -o '%P|%a|%l|%D|%c|%m|%G|%f' 
+PARTITION|AVAIL|TIMELIMIT|NODES|CPUS|MEMORY|GRES|AVAIL_FEATURES
+standard*|up|4-00:00:00|36|48|192032|(null)|(null)
+cpu|up|4-00:00:00|36|48|192032|(null)|(null)
+gpu|up|4-00:00:00|2|48|192032|gpu:2(S:0)|gpu
+
+===== partition cpu (scontrol) =====
+$ scontrol show partition cpu
+PartitionName=cpu
+   AllowGroups=ALL AllowAccounts=ALL AllowQos=ALL
+   AllocNodes=ALL Default=NO QoS=N/A
+   DefaultTime=02:00:00 DisableRootJobs=NO ExclusiveUser=NO GraceTime=0 Hidden=NO
+   MaxNodes=UNLIMITED MaxTime=4-00:00:00 MinNodes=0 LLN=NO MaxCPUsPerNode=UNLIMITED MaxCPUsPerSocket=UNLIMITED
+   Nodes=rdcn[01-36]
+   PriorityJobFactor=50 PriorityTier=50 RootOnly=NO ReqResv=NO OverSubscribe=NO
+   OverTimeLimit=NONE PreemptMode=OFF
+   State=UP TotalCPUs=1728 TotalNodes=36 SelectTypeParameters=NONE
+   JobDefaults=(null)
+   DefMemPerCPU=3800 MaxMemPerNode=UNLIMITED
+   TRES=cpu=1728,mem=6913152M,node=36,billing=2764
+   TRESBillingWeights=CPU=1.6,GRES/gpu=70.0
+
+
+===== nodes of cpu (state, CPUs, memory) =====
+$ sinfo -p cpu -N -o '%N|%T|%c|%m|%C' | head -20
+NODELIST|STATE|CPUS|MEMORY|CPUS(A/I/O/T)
+rdcn01|idle|48|192032|0/48/0/48
+rdcn02|idle|48|192032|0/48/0/48
+rdcn03|idle|48|192032|0/48/0/48
+rdcn04|idle|48|192032|0/48/0/48
+rdcn05|idle|48|192032|0/48/0/48
+rdcn06|idle|48|192032|0/48/0/48
+rdcn07|idle|48|192032|0/48/0/48
+rdcn08|idle|48|192032|0/48/0/48
+rdcn09|idle|48|192032|0/48/0/48
+rdcn10|idle|48|192032|0/48/0/48
+rdcn11|idle|48|192032|0/48/0/48
+rdcn12|idle|48|192032|0/48/0/48
+rdcn13|idle|48|192032|0/48/0/48
+rdcn14|idle|48|192032|0/48/0/48
+rdcn15|idle|48|192032|0/48/0/48
+rdcn16|idle|48|192032|0/48/0/48
+rdcn17|idle|48|192032|0/48/0/48
+rdcn18|idle|48|192032|0/48/0/48
+rdcn19|down*|48|192032|0/0/48/48
+
+===== your jobs, last 2 days (sacct) =====
+$ sacct -u bapic_iiitd -S 2026-11-18 -X -P --format=JobID,JobName,Partition,QOS,State,ExitCode,Elapsed,Timelimit,AllocCPUS,ReqMem,NodeList | tail -40
+JobID|JobName|Partition|QOS|State|ExitCode|Elapsed|Timelimit|AllocCPUS|ReqMem|NodeList
+187576|interactive|cpu|aicte_qip|CANCELLED by 56023|0:0|00:00:00|00:30:00|0|45600M|None assigned
+187622|interactive|cpu|aicte_qip|CANCELLED by 56023|0:0|00:00:00|00:30:00|0|45600M|None assigned
+187623|interactive|cpu|aicte_qip|COMPLETED|0:0|00:00:54|00:05:00|1|3800M|rdcn20
+187624|interactive|cpu|aicte_qip|CANCELLED by 56023|0:0|00:00:00|00:20:00|0|15200M|None assigned
+187626|interactive|cpu|aicte_qip|CANCELLED by 56023|0:0|00:00:00|00:15:00|0|3800M|None assigned
+187627|interactive|standard|aicte_qip|CANCELLED by 56023|0:0|00:00:00|00:15:00|0|3800M|None assigned
+187628|interactive|cpu|aicte_qip|CANCELLED by 56023|0:0|00:00:00|00:15:00|0|3800M|None assigned
+187629|interactive|cpu|aicte_qip|CANCELLED by 56023|0:0|00:00:00|00:10:00|0|3800M|None assigned
+187630|interactive|cpu|aicte_qip|COMPLETED|0:0|00:00:06|00:05:00|1|3800M|rdcn20
+187631|interactive|cpu|aicte_qip|CANCELLED by 56023|0:0|00:00:00|00:08:00|0|3800M|None assigned
+187632|build_llama|cpu|aicte_qip|FAILED|127:0|00:00:00|00:05:00|4|15200M|rdcn20
+187634|build_llama2|cpu|aicte_qip|COMPLETED|0:0|00:00:06|00:05:00|4|15200M|rdcn20
+187636|build_llama4|cpu|aicte_qip|COMPLETED|0:0|00:00:02|00:05:00|4|15200M|rdcn20
+187637|diag|cpu|aicte_qip|COMPLETED|0:0|00:01:37|00:05:00|1|3800M|rdcn20
+187639|build_llama5|cpu|aicte_qip|COMPLETED|0:0|00:00:01|00:05:00|4|15200M|rdcn20
+187640|build_llama6|cpu|aicte_qip|COMPLETED|0:0|00:00:02|00:05:00|4|15200M|rdcn20
+187641|build_llama7|cpu|aicte_qip|COMPLETED|0:0|00:00:02|00:05:00|4|15200M|rdcn20
+187643|build_llama8|cpu|aicte_qip|COMPLETED|0:0|00:00:00|00:05:00|4|15200M|rdcn20
+187644|build_llama9|cpu|aicte_qip|COMPLETED|0:0|00:00:02|00:05:00|4|15200M|rdcn20
+187645|build_llama10|cpu|aicte_qip|COMPLETED|0:0|00:00:00|00:05:00|4|15200M|rdcn20
+187646|build_llama11|cpu|aicte_qip|COMPLETED|0:0|00:00:01|00:05:00|4|15200M|rdcn20
+187647|build_llama13|cpu|aicte_qip|COMPLETED|0:0|00:00:01|00:05:00|4|15200M|rdcn20
+187648|build_llama14|cpu|aicte_qip|COMPLETED|0:0|00:00:00|00:05:00|4|15200M|rdcn20
+187649|diag2|cpu|aicte_qip|COMPLETED|0:0|00:00:00|00:05:00|1|3800M|rdcn20
+187655|p1-ref|cpu|aicte_qip|CANCELLED by 56023|0:0|00:00:00|00:30:00|0|192032M|None assigned
+187656|p1-ref|cpu|aicte_qip|CANCELLED by 56023|0:0|00:00:00|00:05:00|0|192032M|None assigned
+187665|p1-ref|cpu|aicte_qip|CANCELLED by 56023|0:0|00:00:00|00:05:00|0|192032M|None assigned
+187666|p1-ref-g6|cpu|aicte_qip|COMPLETED|0:0|00:00:28|00:05:00|4|15200M|rdcn20
+187667|p1-ref|cpu|aicte_qip|COMPLETED|0:0|00:00:25|00:05:00|4|8G|rdcn20
+187669|p1-ref|cpu|aicte_qip|COMPLETED|0:0|00:02:11|00:05:00|4|8G|rdcn20
+187670|p1-ref|cpu|aicte_qip|COMPLETED|0:0|00:00:27|00:05:00|4|8G|rdcn20
+
+===== max resources your jobs actually got (sacct, last 2 days) =====
+$ sacct -u bapic_iiitd -S 2026-11-18 -X -n -P --format=AllocCPUS,Elapsed,ReqMem | sort -t'|' -k1,1n | tail -1
+4|00:02:11|8G
+
+===== profiling tools on the login node =====
+$ command -v perf; perf --version 2>&1 | head -1; echo perf_event_paranoid=$(cat /proc/sys/kernel/perf_event_paranoid); (module -t avail 2>&1 | grep -iE 'perf|vtune|likwid|papi' | head)
+bash: perf: command not found
+perf_event_paranoid=0
+compiler/oneapi-2024/vtune/
+compiler/oneapi-2024/vtune/2024.1

@@ -1,0 +1,4 @@
+L? 1 Data 32K shared_with=0
+L? 1 Instruction 32K shared_with=0
+L? 2 Unified 1024K shared_with=0
+L? 3 Unified 36608K shared_with=0-23

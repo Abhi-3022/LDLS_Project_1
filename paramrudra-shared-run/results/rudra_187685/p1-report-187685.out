@@ -1,0 +1,21 @@
+==========================================
+SLURM_CLUSTER_NAME = paramrudra
+SLURM_ARRAY_JOB_ID = 
+SLURM_ARRAY_TASK_ID = 
+SLURM_ARRAY_TASK_COUNT = 
+SLURM_ARRAY_TASK_MAX = 
+SLURM_ARRAY_TASK_MIN = 
+SLURM_JOB_ACCOUNT = nsmext
+SLURM_JOB_ID = 187685
+SLURM_JOB_NAME = p1-report
+SLURM_JOB_NODELIST = rdcn25
+SLURM_JOB_USER = bapic_iiitd
+SLURM_JOB_UID = 56023
+SLURM_JOB_PARTITION = cpu
+SLURM_TASK_PID = 2098056
+SLURM_SUBMIT_DIR = /home/bapic_iiitd/3_group/ajit/paramrudra-scripts
+SLURM_CPUS_ON_NODE = 4
+SLURM_NTASKS = 1
+SLURM_TASK_PID = 2098056
+==========================================
+report written: /home/bapic_iiitd/3_group/ajit/paramrudra-scripts/results/rudra_187685/REPORT.md

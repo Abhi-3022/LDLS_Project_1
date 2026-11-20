@@ -1,0 +1,13 @@
+[17:18:40] module: loaded compiler/gcc/12.3
+[17:18:42] spack: loaded cmake@3.29.2%gcc@12.2.0
+[17:18:42] spack: loaded numactl@2.0.14%gcc@13.2.0
+[17:18:43] using gcc 12.3.0 (/home/apps/gcc-12.3/bin/gcc), cmake 3.29.2, numactl /home/apps/spack/opt/spack/linux-almalinux8-cascadelake/gcc-13.2.0/numactl-2.0.14-cl74ohoqq5hiksstuz6b5qxnf64psrr7/bin/numactl
+[17:18:43] host=rdcn20 job=187669 partition=cpu allowed_cpus=0-3
+[17:18:43] physical cores=4 sockets=1 socket0 cores=4 socket0 numa nodes=0 numactl=yes KV=q8_0
+[17:18:43] note: 4 physical cores allocated (a Rudra CPU node has 48): shared node, not exclusive
+node record written to /home/bapic_iiitd/3_group/ajit/paramrudra-scripts/results/ref_187669/node
+[17:18:46] manifest: llama_cpp_commit: 827466b9efa0 compiler_cxx: /home/apps/gcc-12.3/bin/g++ (12.3.0) model_sha256: 6f85a640a97cf2bf5b8e764087b1e83da0fdb51d7c9fab7d0fece9385611df83 
+[17:18:46] reused T4_socket from /home/bapic_iiitd/3_group/ajit/paramrudra-scripts/results/ref_187667
+[17:18:46] reference run: threads=3 placement=socket
+[17:19:11] reference run: threads=2 placement=socket
+[17:19:46] reference run: threads=1 placement=socket

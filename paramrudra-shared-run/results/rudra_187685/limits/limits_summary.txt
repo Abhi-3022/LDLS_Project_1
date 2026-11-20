@@ -1,0 +1,12 @@
+user: bapic_iiitd
+account: nsmext
+qos: aicte_qip
+qos_maxwall: 00:05:00
+qos_max_tres_per_user: cpu=4,node=1
+qos_max_jobs_per_user: 2
+qos_max_submit_per_user: none
+partition: cpu
+partition_maxtime: 4-00:00:00
+partition_nodes: 36
+partition_cpus: 1728
+login_perf: none

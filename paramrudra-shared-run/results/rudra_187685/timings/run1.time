@@ -1,0 +1,6 @@
+Command: ['env', 'OMP_PROC_BIND=close', 'OMP_PLACES=cores', 'numactl', '--membind=0', 'taskset', '-c', '0,1,2,3', '/home/bapic_iiitd/3_group/ajit/paramrudra-scripts/third_party/llama.cpp/build-rudra/bin/llama-completion', '-m', '/home/bapic_iiitd/3_group/ajit/paramrudra-scripts/models/Llama-3.2-1B-Instruct-Q4_K_M.gguf', '-f', '/home/bapic_iiitd/3_group/ajit/paramrudra-scripts/prompt_512.txt', '-c', '1024', '-n', '128', '--ignore-eos', '--temp', '0', '--seed', '1', '-t', '4', '-ctk', 'q8_0', '-ctv', 'q8_0', '-fa', 'on', '-no-cnv', '--no-display-prompt']
+Elapsed (wall clock) time (seconds): 7.03
+User time (seconds): 25.23
+System time (seconds): 0.20
+Maximum resident set size (kbytes): 1402944
+Exit status: 0
