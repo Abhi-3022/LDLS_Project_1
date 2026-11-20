@@ -4,7 +4,7 @@ Llama-3.2-1B and Llama-3.2-3B on llama.cpp, CPU only, on an Intel Core Ultra 7 1
 This repository has everything needed to rerun our measurements: build notes, benchmark scripts,
 raw results, analysis and plotting code. The bonus (Mamba-3 decode step on CPU) is in `bonus_mamba3/`.
 
-Team: [Team member names]
+Team no.: 3
 
 ## Main results (6 threads, one per P-core)
 
