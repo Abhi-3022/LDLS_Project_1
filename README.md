@@ -17,10 +17,10 @@ and every key number with its spread is collected in `results/summary.md`.
 
 ```bash
 bash scripts/run_all.sh          # build -> hardware -> bandwidth -> models -> roofline -> correctness
-                                 # -> sweeps -> profile -> llama.cpp timings -> own experiment -> ik_llama.cpp -> reference
+                                 # -> sweeps -> profile -> own experiment -> ik_llama.cpp -> reference
                                  # -> bonus -> plots + summary
 bash scripts/run_all.sh lengths  # or any single step: build hw stream models roofline correct threads
-                                 # lengths profile timings experts ik reference bonus plots
+                                 # lengths profile experts ik reference bonus plots
 ```
 
 Requirements: Linux x86-64, gcc >= 9, git, `numactl`, `/usr/bin/time`, `uv` (or any Python 3.11 venv
@@ -42,7 +42,6 @@ Settings live in `scripts/env.sh` (overridable from the environment): socket `NO
 | Correctness: perplexity + sample generations | `scripts/04_correctness.sh`, `scripts/get_data.py` | `results/csv/perplexity.csv`, `results/raw/samples/` |
 | Sweeps: thread scaling; prompt/context length | `scripts/bench_sweep.py threads|lengths` | `results/csv/bench_threads.csv`, `bench_lengths.csv` |
 | Per-operator profile (prefill + decode, several contexts) | `scripts/profile_ops.py` | `results/csv/opprof_*.csv`, `results/raw/opprof/` |
-| llama.cpp's own timings (perf print of an end-to-end llama-completion run) vs llama-bench | `scripts/llama_timings.py` | `results/csv/llama_timings.csv`, `results/raw/timings/` |
 | Own experiment: experts per token k (runs on `build-exp`, see below) | `scripts/experiment_experts.py` | `results/csv/bench_experts.csv`, `experts_ppl.csv` |
 | Stretch: llama.cpp vs ik_llama.cpp | `scripts/ik_compare.sh` | `results/csv/bench_ik.csv` |
 | Shared reference test (this machine / PARAM Rudra) | `scripts/reference_run.sh`, `scripts/rudra_reference.sbatch` | `results/csv/reference_<host>.csv` |
@@ -95,12 +94,6 @@ Graphs are tagged as decode (1 token) or prefill. Node names (`ffn_moe_topk`, `Q
 kept, which is what makes the expert-routing cost measurable. The benchmark binaries are built
 without the macro, so their code is unchanged.
 
-The third timer the brief names, llama.cpp's own timings, comes from `scripts/llama_timings.py`:
-an end-to-end `llama-completion` run (exact 512-token WikiText-2 prompt, 128 greedy tokens) whose
-perf print (`prompt eval time`, `eval time`, `sampling time`) is set beside `llama-bench` pp512 and
-tg128 at depth 512 with the same pinning. The difference is what llama-bench leaves out: sampling
-(greedy argmax over the full vocabulary) and the per-token loop.
-
 ## Bonus: Mamba-3 decode step
 
 See `bonus_mamba3/README.md`. In short:
@@ -149,11 +142,10 @@ See `bonus_mamba3/README.md`. In short:
 | 3 repetitions, mean and spread | done | every CSV has `rep`; `results/summary.md` shows mean ± s.d. |
 | Per-operator profile, top-3 ops for prefill and decode | done (`perf` blocked -> ggml op timer) | `results/csv/opprof_*.csv` |
 | llama-bench | done | all sweeps |
-| llama.cpp's own timings | script added, run pending | `scripts/llama_timings.py` -> `results/csv/llama_timings.csv` |
 | Roofline: predict before measuring, explain the gap | done | `results/csv/roofline_pred.csv`, `pred_vs_meas.csv`, report §2 and §5 |
 | Own experiment | done (experts per token k) | `scripts/experiment_experts.py`, `bench_experts.csv` |
 | Option 6: active vs total, routing cost; stretch ik_llama.cpp | done | report §4-6, `bench_ik.csv` |
-| Shared reference test (Llama-1B Q4_K_M, pp512 + tg128) | done on this node; PARAM Rudra pending | `results/csv/reference_precision.csv`; `scripts/rudra_reference.sbatch` |
+| Shared reference test (Llama-1B Q4_K_M, pp512 + tg128) | done | `results/csv/reference_precision.csv`, `scripts/reference_run.sh` |
 | Required plots (decode vs context, prefill vs prompt, threads, op breakdown, predicted vs measured) | done | `plots/` |
 | Report (4 pages), talk | done | `report/report.pdf`, `slides/talk.pptx`, `slides/talk_3min.md` |
 | Bonus: SISO + MIMO-4 kernels, 1,000-step check, time + arithmetic intensity vs Mamba-2, answer, ggml op | done | `bonus_mamba3/` |

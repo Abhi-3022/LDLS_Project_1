@@ -20,7 +20,6 @@ step correct    && bash "$S/04_correctness.sh"
 step threads    && "$PY" "$S/bench_sweep.py" threads
 step lengths    && "$PY" "$S/bench_sweep.py" lengths
 step profile    && "$PY" "$S/profile_ops.py"
-step timings    && "$PY" "$S/llama_timings.py"                              # llama.cpp's own perf print vs llama-bench
 step experts    && "$PY" "$S/experiment_experts.py"
 step ik         && bash "$S/ik_compare.sh"
 step reference  && bash "$S/reference_run.sh" "$LLAMA_BIN/llama-bench" "$MODELS/Llama-3.2-1B-Instruct-Q4_K_M.gguf" "$RESULTS/csv/reference_$(hostname -s).csv" 55 "$T_MAIN"
