@@ -1,0 +1,13 @@
+part,case,impl,threads,steps,us_per_step,rel_err_vs_ref,max_abs_diff_vs_ours,direct_us_per_step
+A,mamba2,ggml_ssm_scan,1,1000,92.189,5.831e-07,,
+A,mamba2,ours_avx2,1,1000,69.060,1.526e-07,2.098e-05,
+A,mamba2,ggml_ssm_scan,8,1000,16.055,5.831e-07,,
+A,mamba2,ours_avx2,8,1000,11.018,1.526e-07,2.098e-05,
+A,mamba2,ggml_ssm_scan,16,1000,102.239,5.831e-07,,
+A,mamba2,ours_avx2,16,1000,7.627,1.526e-07,2.098e-05,
+B,siso,ggml_custom_avx2,1,1000,65.688,2.169e-07,0.000e+00,64.600
+B,siso,ggml_custom_avx2,8,1000,12.634,2.169e-07,0.000e+00,10.618
+B,siso,ggml_custom_avx2,16,1000,13.448,2.169e-07,0.000e+00,9.199
+B,mimo4,ggml_custom_avx2,1,1000,182.462,1.288e-07,0.000e+00,185.615
+B,mimo4,ggml_custom_avx2,8,1000,27.966,1.288e-07,0.000e+00,26.141
+B,mimo4,ggml_custom_avx2,16,1000,20.320,1.288e-07,0.000e+00,16.776
