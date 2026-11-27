@@ -1,0 +1,8 @@
+case: H=16 P=64 N=128 R=4 rope_angles=32 steps=1000, tolerance 1.0e-04 (relative)
+kernel  impl      worst_y_err    at_step      final_y_err  final_state_err  result
+siso    plain       7.555e-07        261        1.914e-07        7.286e-06  PASS
+siso    avx2        4.549e-07        806        1.712e-07        7.718e-06  PASS
+mimo    plain       5.207e-07        942        1.379e-07        8.791e-06  PASS
+mimo    avx2        4.326e-07        239        1.689e-07        8.814e-06  PASS
+mamba2  plain       1.016e-06        619        3.470e-07        2.101e-07  PASS
+mamba2  avx2        8.054e-07        897        1.674e-07        2.518e-07  PASS
